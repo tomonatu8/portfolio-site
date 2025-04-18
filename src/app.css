@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+@layer components {
+  .section-title {
+    @apply text-2xl font-bold mb-8 text-center text-gray-800;
+    @apply after:content-[''] after:block after:w-16 after:h-1 after:bg-primary after:mx-auto after:mt-2;
+  }
+  
+  .content-container {
+    @apply max-w-4xl mx-auto;
+  }
+}
+
+/* Define primary color */
+:root {
+  --color-primary: #3B82F6;
+  --color-primary-dark: #2563EB;
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.hover\:text-primary:hover {
+  color: var(--color-primary);
+}
+
+.hover\:text-primary-dark:hover {
+  color: var(--color-primary-dark);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.border-primary {
+  border-color: var(--color-primary);
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
