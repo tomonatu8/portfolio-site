@@ -74,14 +74,14 @@ export const skills: LocalizedSkill[] = [
   { name: 'Generative AI', category: 'ai' },
   { name: 'NLP', category: 'ai' },
   // { name: 'Computer Vision', category: 'ai' },
-  { name: 'Recommender Systems', category: 'ai' },
+  // { name: 'Recommender Systems', category: 'ai' },
   // { name: 'Generative AI', category: 'ai' },
   { name: 'Algorithm Optimization', category: 'ai' },
   { name: 'Deep Learning', category: 'ai' },
   
   // DevOps & Tools
   { name: 'Docker', category: 'devops' },
-  { name: 'GCP', category: 'devops' },
+  // { name: 'GCP', category: 'devops' },
   { name: 'AWS', category: 'devops' },
   // { name: 'CI/CD', category: 'devops' },
   { name: 'Code Test', category: 'devops' },
@@ -184,7 +184,7 @@ export const experience: LocalizedExperience[] = [
   },
   {
     title: bt('Machine Learning Engineer Intern', '機械学習エンジニア インターン'),
-    company: bt('LegalOn Technologies, Inc.', 'LegalOn Technologies'),
+    company: bt('LegalOn Technologies, Inc.', '株式会社LegalForce (現LegalOn Technologies)'),
     location: bt('Tokyo, Japan', '東京, 日本'),
     startDate: '08/2018',
     endDate: '12/2018',
@@ -361,11 +361,13 @@ export const profile: LocalizedProfile = {
   bio: ba(
     [
       // 'From Mie Prefecture, Japan',
-      'Research and development in applied mathematics, optimization algorithms (matching, allocation), and machine learning.',
+      // 'Research and development in applied mathematics, optimization algorithms (matching, allocation), and machine learning.',
+      'Expertise in applied mathematics, optimization (matching / allocation), and machine learning.',
       // 'Experience in implementing algorithms and AI systems into practical business solutions.',
-      'Interest in connecting research innovations with practical applications',
+      'Experienced in translating research innovations into practical applications.',
       // 'Proven success in implementing optimized matching algorithms.',
-      'Passionate about bridging research innovations with real-world implementation (business side also). Particularly interested in mechanism design, advanced algorithms, machine learning, and generative AI.',
+      // 'Passionate about bridging research innovations with real-world implementation (business side also). Particularly interested in mechanism design, advanced algorithms, machine learning, and generative AI.',
+      'Passionate about bridging research and real‑world implementation, including the business side. ',
     ],
     [
       // '三重県出身',
