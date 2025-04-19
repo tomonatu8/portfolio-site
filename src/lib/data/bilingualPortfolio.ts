@@ -113,6 +113,9 @@ export const experience: LocalizedExperience[] = [
     technologies: ['Computational Chemistry', 'Optimizations', 'Applied Mathematics', 'Python', 'C++'],
     isFullTime: false
   },
+
+  // Liquitousも書いておく
+
   {
     title: bt('Engineer & Data Scientist', 'エンジニア・データサイエンティスト'),
     company: bt('Mirai Share, Inc.', '株式会社未来シェア'),
@@ -301,7 +304,8 @@ export const publications: LocalizedPublication[] = [
     year: 2024,
     description: ['Mechanism Design', 'Matching'],
     category: 'workshop',
-    url: 'https://preflib.github.io/gaiw2024/program/'
+    url: 'https://preflib.github.io/gaiw2024/program/',
+    repo: 'https://github.com/tomonatu8/ExtendedSDA'
   },
   {
     title: btNoTranslate('Mechanism-informed preference learning for fair division'),
