@@ -3,6 +3,7 @@
   import { onMount } from 'svelte';
   import { language, toggleLanguage, t } from '$lib/i18n/i18n';
   import { nav, footer } from '$lib/i18n/translations';
+  import { base } from '$app/paths';
   
   let mobileMenuOpen = false;
   let mounted = false;
@@ -32,7 +33,7 @@
 <header class="sticky top-0 bg-white border-b border-gray-200 z-10">
   <div class="container mx-auto px-4 py-3">
     <nav class="flex justify-between items-center">
-      <a href="/" class="text-lg font-medium text-gray-800">Tomohiko Yokoyama</a>
+      <a href="{base}/" class="text-lg font-medium text-gray-800">Tomohiko Yokoyama</a>
       
       <div class="hidden md:flex space-x-6 items-center">
         <!-- About リンクを削除 -->
