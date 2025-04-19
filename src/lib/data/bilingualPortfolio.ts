@@ -138,7 +138,7 @@ export const experience: LocalizedExperience[] = [
     company: bt('National University of Singapore', 'National University of Singapore'),
     location: bt('Singapore', 'シンガポール'),
     startDate: '01/2024',
-    endDate: '01/2024',
+    endDate: '02/2024',
     // description: ba(
     //   [
     //   ],
@@ -216,8 +216,8 @@ export const education: LocalizedEducation[] = [
     startDate: '10/2022',
     endDate: 'Expected: 09/2025',
     description: ba(
-      ['Focusing on applied algorithm design, applied mathematics, and mechanism design'],
-      ['応用アルゴリズム設計、応用数学、最適化、メカニズムデザインなど']
+      ['Focusing on algorithm design, applied mathematics, and mechanism design'],
+      ['アルゴリズム、応用数学、最適化、メカニズムデザインなど']
     )
   },
   {
@@ -358,7 +358,7 @@ export const projects: LocalizedProject[] = [
 export const profile: LocalizedProfile = {
   name: bt('Tomohiko Yokoyama', '横山 智彦'),
   title: bt(
-    'PhD Candidate in Information Science and Technology',
+    'Ph.D. Candidate in Information Science and Technology',
     '情報理工学系研究科 博士課程'
   ),
   image: '',
