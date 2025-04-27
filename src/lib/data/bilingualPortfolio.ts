@@ -110,7 +110,10 @@ export const experience: LocalizedExperience[] = [
     //   [
     //   ]
     // ),
-    technologies: ['Computational Chemistry', 'Optimizations', 'Applied Mathematics', 'Python', 'C++'],
+    technologies: ba(
+      ['Computational Chemistry', 'Optimizations', 'Applied Mathematics', 'Python', 'C++'],
+      ['計算化学', '最適化', '応用数学', 'Python', 'C++']
+    ),
     isFullTime: false
   },
 
@@ -130,7 +133,10 @@ export const experience: LocalizedExperience[] = [
         'モビリティに関連したアルゴリズム、データの分析',
       ]
     ),
-    technologies: ['Algorithm', 'Generative AI', 'NLP', 'Data Analysis', 'Machine Learning', 'Python'],
+    technologies: ba(
+      ['Algorithm', 'Generative AI', 'NLP', 'Data Analysis', 'Machine Learning', 'Python'],
+      ['アルゴリズム', '生成AI', '自然言語処理', 'データ分析', '機械学習', 'Python']
+    ),
     isFullTime: false
   },
   {
@@ -145,7 +151,10 @@ export const experience: LocalizedExperience[] = [
     //   [
     //   ]
     // ),
-    technologies: ['Research', 'Algorithm', 'Fair Division'],
+    technologies: ba(
+      ['Research', 'Algorithm', 'Fair Division'],
+      ['研究', 'アルゴリズム', '公平分割']
+    ),
   },
   {
     title: bt('Research Scientist Intern', 'リサーチサイエンティスト インターン'),
@@ -163,7 +172,10 @@ export const experience: LocalizedExperience[] = [
         '相互レコメンデーションアルゴリズムの公平性評価',
       ]
     ),
-    technologies: ['Python', 'Algorithm', 'Matching', 'Recommender Systems'],
+    technologies: ba(
+      ['Python', 'Algorithm', 'Matching', 'Recommender Systems'],
+      ['Python', 'アルゴリズム', 'マッチング', '推薦システム']
+    ),
     isFullTime: false
   },
   {
@@ -182,7 +194,10 @@ export const experience: LocalizedExperience[] = [
         '画像認識最適化技術'
       ]
     ),
-    technologies: ['Python', 'Tensorflow', 'Computer Vision', 'Deep Learning'],
+    technologies: ba(
+      ['Python', 'Tensorflow', 'Computer Vision', 'Deep Learning'],
+      ['Python', 'Tensorflow', 'コンピュータビジョン', '深層学習']
+    ),
     isFullTime: false
   },
   {
@@ -201,7 +216,10 @@ export const experience: LocalizedExperience[] = [
         'Word XMLファイル用の情報抽出システム',
       ]
     ),
-    technologies: ['Python', 'Machine Learning', 'NLP', 'Flask'],
+    technologies: ba(
+      ['Python', 'Machine Learning', 'NLP', 'Flask'],
+      ['Python', '機械学習', '自然言語処理', 'Flask']
+    ),
     isFullTime: false
   }
 ];
@@ -358,8 +376,8 @@ export const projects: LocalizedProject[] = [
 export const profile: LocalizedProfile = {
   name: bt('Tomohiko Yokoyama', '横山 智彦'),
   title: bt(
-    'Ph.D. Candidate in Information Science and Technology',
-    '情報理工学系研究科 博士課程'
+    'A third-years Ph.D. Candidate in Information Science and Technology',
+    '情報理工学系研究科 博士課程 3年'
   ),
   image: '',
   bio: ba(

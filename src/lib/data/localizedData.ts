@@ -39,7 +39,7 @@ export interface LocalizedExperience {
   startDate: string; 
   endDate: string; 
   description?: BilingualArray;
-  technologies: string[]; 
+  technologies: BilingualArray; 
   isFullTime?: boolean; 
 }
 

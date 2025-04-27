@@ -63,7 +63,7 @@ export function getExperience(lang?: Language) {
       startDate: exp.startDate,
       endDate: exp.endDate,
       description: exp.description ? getArray(exp.description, currentLang) : undefined,
-      technologies: exp.technologies,
+      technologies: getArray(exp.technologies, currentLang),
       isFullTime: exp.isFullTime
     }));
   } catch (e) {
