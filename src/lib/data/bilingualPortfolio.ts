@@ -134,8 +134,8 @@ export const experience: LocalizedExperience[] = [
     isFullTime: false
   },
   {
-    title: bt('Research Visit', 'リサーチ ビジット'),
-    company: bt('National University of Singapore', 'National University of Singapore'),
+    title: bt('Research Visit', 'リサーチ訪問'),
+    company: bt('National University of Singapore', 'シンガポール国立大学'),
     location: bt('Singapore', 'シンガポール'),
     startDate: '01/2024',
     endDate: '02/2024',
