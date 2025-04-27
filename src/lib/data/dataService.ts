@@ -118,7 +118,7 @@ export function getSkills(lang?: Language) {
     const currentLang = lang || (isBrowser ? get(language) : 'en');
     
     return bilingualData.skills.map(skill => ({
-      name: skill.name,
+      name: getText(skill.name, currentLang),
       description: skill.description ? getText(skill.description, currentLang) : undefined,
       category: skill.category
     }));

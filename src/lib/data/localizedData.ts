@@ -45,7 +45,7 @@ export interface LocalizedExperience {
 
 
 export interface LocalizedSkill {
-  name: string; 
+  name: BilingualText; 
   category: string; 
   description?: BilingualText; 
 }

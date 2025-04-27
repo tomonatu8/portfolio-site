@@ -16,12 +16,12 @@ const ba = (en: string[], ja: string[]): BilingualArray => ({ en, ja });
 
 export const skills: LocalizedSkill[] = [
   // Languages
-  {name: 'Japanese', category: 'language'},
-  {name: 'English', category: 'language'},
+  {name: bt('Japanese', '日本語'), category: 'language'},
+  {name: bt('English', '英語'), category: 'language'},
 
   // Algorithm & Systems
   { 
-    name: 'Algorithm Design', 
+    name: bt('Algorithm Design', 'アルゴリズム設計'), 
     description: bt(
       'Expertise in algorithm design and optimization, particularly in matching algorithms and mechanism design.',
       'マッチングアルゴリズムやメカニズムデザインに特化したアルゴリズム設計と最適化の専門知識。'
@@ -29,7 +29,7 @@ export const skills: LocalizedSkill[] = [
     category: 'algorithm' 
   },
   { 
-    name: 'Applied Mathematics', 
+    name: bt('Applied Mathematics', '応用数学'), 
     description: bt(
       'Strong foundation in applied mathematics, particularly in optimization and computational methods.',
       '最適化や計算手法に特化した応用数学の強固な基盤。'
@@ -39,7 +39,7 @@ export const skills: LocalizedSkill[] = [
 
   // Programming Languages
   { 
-    name: 'Python', 
+    name: bt('Python', 'Python'), 
     description: bt(
       'Main language for production-level algorithm development and ML pipelines. Extensive experience with NumPy, Pandas, and scientific computing libraries.',
       'アルゴリズム開発やMLパイプラインの本番実装で主に使用。PyTorch, NumPy, Pandas, 科学計算ライブラリなど。'
@@ -47,7 +47,7 @@ export const skills: LocalizedSkill[] = [
     category: 'programming' 
   },
   { 
-    name: 'JavaScript/TypeScript', 
+    name: bt('JavaScript/TypeScript', 'JavaScript/TypeScript'), 
     description: bt(
       'Frontend and backend web development with Node.js, React, Svelte, and other modern frameworks.',
       'Node.js、ReactやSvelteなど、その他のモダンフレームワークを使用したフロントエンドおよびバックエンドWeb開発。'
@@ -55,7 +55,7 @@ export const skills: LocalizedSkill[] = [
     category: 'programming' 
   },
   { 
-    name: 'Rust', 
+    name: bt('Rust', 'Rust'), 
     description: bt(
       'Performance-critical applications and systems programming. Created Python bindings using PyO3. WebAssembly development for frontend.',
       'パフォーマンスが重要なアプリケーションとシステムプログラミング。PyO3を使用したPythonバインディングの作成。フロントで利用できるWebAssemblyの開発。'
@@ -71,26 +71,26 @@ export const skills: LocalizedSkill[] = [
   // { name: 'TensorFlow', category: 'ai' },
   
   // AI & ML
-  { name: 'Generative AI', category: 'ai' },
-  { name: 'NLP', category: 'ai' },
+  { name: bt('Generative AI', '生成AI'), category: 'ai' },
+  { name: bt('NLP', '自然言語処理'), category: 'ai' },
   // { name: 'Computer Vision', category: 'ai' },
   // { name: 'Recommender Systems', category: 'ai' },
   // { name: 'Generative AI', category: 'ai' },
-  { name: 'Algorithm Optimization', category: 'ai' },
-  { name: 'Deep Learning', category: 'ai' },
+  { name: bt('Algorithm', 'アルゴリズム'), category: 'ai' },
+  { name: bt('Deep Learning', '深層学習'), category: 'ai' },
   
   // DevOps & Tools
-  { name: 'Docker', category: 'devops' },
+  { name: bt('Docker', 'Docker'), category: 'devops' },
   // { name: 'GCP', category: 'devops' },
-  { name: 'AWS', category: 'devops' },
+  { name: bt('AWS', 'AWS'), category: 'devops' },
   // { name: 'CI/CD', category: 'devops' },
-  { name: 'Code Test', category: 'devops' },
+  { name: bt('Code Test', 'コードテスト'), category: 'devops' },
   
   // Other
   // { name: 'NoSQL', category: 'other' },
-  { name: 'API Design', category: 'other' },
-  { name: 'Git', category: 'other' },
-  { name: 'Team Development', category: 'other' },
+  { name: bt('API Design', 'API設計'), category: 'other' },
+  { name: bt('Development with Git', 'Gitを用いた開発'), category: 'other' },
+  { name: bt('Team Development', 'チーム開発'), category: 'other' },
   // { name: 'Algorithm Optimization', category: 'other' }
 
   // { name: 'Team Development', category: 'soft' },
