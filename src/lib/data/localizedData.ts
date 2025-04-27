@@ -57,7 +57,7 @@ export interface LocalizedPublication {
   venue: BilingualText;
   category: string; 
   year: number; 
-  description: string[]; 
+  description: BilingualArray; 
   url?: string; 
   repo?: string; 
 }
@@ -67,7 +67,7 @@ export interface LocalizedProject {
   title: BilingualText;
   description: BilingualText;
   image: string; 
-  technologies: string[];
+  technologies: BilingualArray;
   repo?: string; 
   demo?: string; 
 }

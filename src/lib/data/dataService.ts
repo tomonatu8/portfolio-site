@@ -82,7 +82,7 @@ export function getPublications(lang?: Language) {
       authors: pub.authors,
       venue: getText(pub.venue, currentLang),
       year: pub.year,
-      description: pub.description,
+      description: getArray(pub.description, currentLang),
       category: pub.category,
       url: pub.url,
       repo: pub.repo
@@ -102,7 +102,7 @@ export function getProjects(lang?: Language) {
       title: getText(proj.title, currentLang),
       description: getText(proj.description, currentLang),
       image: proj.image,
-      technologies: proj.technologies,
+      technologies: getArray(proj.technologies, currentLang),
       repo: proj.repo,
       demo: proj.demo
     }));

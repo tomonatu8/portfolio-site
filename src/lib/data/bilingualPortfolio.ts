@@ -272,7 +272,10 @@ export const publications: LocalizedPublication[] = [
     authors: 'A. Igarashi and T. Yokoyama',
     venue: btNoTranslate('In Proceedings of the 37th AAAI Conference on Artificial Intelligence (AAAI 2023), pp.16449-16451'),
     year: 2023,
-    description: ['Mechanism Design', 'Fair Division', 'Applications'],
+    description: ba(
+      ['Mechanism Design', 'Fair Division', 'Applications'],
+      ['メカニズムデザイン', '公平分割', 'アプリケーション']
+    ),
     category: 'conference',
     url: 'https://ojs.aaai.org/index.php/AAAI/article/view/27075',
     repo: 'https://github.com/kaji-buntan-project/kaji-buntan'
@@ -282,7 +285,10 @@ export const publications: LocalizedPublication[] = [
     authors: 'W. Matsuoka, T. Oki, R. Yamada, T. Yokoyama, S. Suda, C. M. Saunders, B. B. Skjelstad, Y. Harabuchi, N. Fey, S. Iwata, and S. Maeda',
     venue: btNoTranslate('ACS Catalysis, 14(21): pp.16297-16312'),
     year: 2024,
-    description: ['Computational Chemistry', 'Optimization'],
+    description: ba(
+      ['Computational Chemistry', 'Optimization'],
+      ['計算化学', '最適化']
+    ),
     category: 'journal',
     url: 'https://pubs.acs.org/doi/10.1021/acscatal.4c06003'
   },
@@ -291,7 +297,10 @@ export const publications: LocalizedPublication[] = [
     authors: 'Y. Tomita and T. Yokoyama',
     venue: btNoTranslate('In Proceedings of the 18th ACM Conference on Recommender Systems (RecSys\'24), pp.209-218'),
     year: 2024,
-    description: ['* Shortlisted for 6 best full paper candidates in RecSys\'24', 'Machine Learning', 'Recommender Systems', 'Matching'],
+    description: ba(
+      ['* Shortlisted for 6 best full paper candidates in RecSys\'24', 'Machine Learning', 'Recommender Systems', 'Matching'],
+      ['* RecSys\'24において最優秀論文候補6件にノミネート', '機械学習', '推薦システム', 'マッチング']
+    ),
     category: 'conference',
     url: 'https://dl.acm.org/doi/10.1145/3640457.3688130',
     repo: 'https://github.com/CyberAgentAILab/FairReciprocalRecommendation'
@@ -301,7 +310,10 @@ export const publications: LocalizedPublication[] = [
     authors: 'Y. Harabuchi, T. Yokoyama, W. Matsuoka, T. Oki, S. Iwata, and S. Maeda',
     venue: btNoTranslate('The Journal of Physical Chemistry A, 128(14): pp.2883-2890'),
     year: 2024,
-    description: ['Computational Chemistry'],
+    description: ba(
+      ['Computational Chemistry'],
+      ['計算化学']
+    ),
     category: 'journal',
     url: 'https://pubs.acs.org/doi/full/10.1021/acs.jpca.4c00204'
   },
@@ -310,7 +322,10 @@ export const publications: LocalizedPublication[] = [
     authors: 'T. Yokoyama and A. Igarashi',
     venue: btNoTranslate('In Proceedings of the 18th ACM Conference on Recommender Systems (AAMAS 2025), forthcoming'),
     year: 2025,
-    description: ['Mechanism Design', 'Matching', 'Fair Division'],
+    description: ba(
+      ['Mechanism Design', 'Matching', 'Fair Division'],
+      ['メカニズムデザイン', 'マッチング', '公平分割']
+    ),
     category: 'conference'
   },
   
@@ -320,7 +335,10 @@ export const publications: LocalizedPublication[] = [
     authors: 'Z. Sun, T. Yokoyama, and M. Yokoo',
     venue: btNoTranslate('In Appears of the GAIW workshop held of part of AAMAS'),
     year: 2024,
-    description: ['Mechanism Design', 'Matching'],
+    description: ba(
+      ['Mechanism Design', 'Matching'],
+      ['メカニズムデザイン', 'マッチング']
+    ),
     category: 'workshop',
     url: 'https://preflib.github.io/gaiw2024/program/',
     repo: 'https://github.com/tomonatu8/ExtendedSDA'
@@ -330,7 +348,10 @@ export const publications: LocalizedPublication[] = [
     authors: 'A. Igarashi, R. Maruo, K. Takeuchi, and T. Yokoyama',
     venue: btNoTranslate('In Appears of the GAIW workshop held of part of AAMAS'),
     year: 2025,
-    description: ['Mechanism Design', 'Machine Learning', 'Fair Division', 'Preference Learning'],
+    description: ba(
+      ['Mechanism Design', 'Machine Learning', 'Fair Division', 'Preference Learning', 'Deep Learning'],
+      ['メカニズムデザイン', '機械学習', '公平分割', '選好学習', '深層学習']
+    ),
     category: 'workshop',
     url: 'https://preflib.github.io/gaiw2025/program/'
   },
@@ -341,7 +362,10 @@ export const publications: LocalizedPublication[] = [
     authors: 'R. Mahara, R. Mizutani, T. Oki, and T. Yokoyama',
     venue: btNoTranslate('In arXiv'),
     year: 2024,
-    description: ['Mechanism Design', 'Fair Division'],
+    description: ba(
+      ['Mechanism Design', 'Fair Division'],
+      ['メカニズムデザイン', '公平分割']
+    ),
     category: 'preprint',
     url: 'https://arxiv.org/abs/2409.06423'
   }
@@ -356,7 +380,10 @@ export const projects: LocalizedProject[] = [
       '家事分担のための公平分割アルゴリズムを使用したWebアプリケーション。' //13,000人以上のユーザーを持つ本番サービスとして展開。
     ),
     image: '',
-    technologies: ['Algorithm', 'Fair Division', 'Node.js', 'React', 'Rust', 'WebAssembly', 'Docker', 'AWS'],
+    technologies: ba(
+      ['Algorithm', 'Fair Division', 'Node.js', 'React', 'Rust', 'WebAssembly', 'Docker', 'AWS'],
+      ['アルゴリズム', '公平分割', 'Node.js', 'React', 'Rust', 'WebAssembly', 'Docker', 'AWS']
+    ),
     repo: 'https://github.com/kaji-buntan-project/kaji-buntan',
     demo: 'https://housechore-division.com'
   },
@@ -367,7 +394,10 @@ export const projects: LocalizedProject[] = [
       'RustでPythonバインディングを持つ高性能Mallowsモデルサンプリングライブラリ。計算社会選択における投票とランキング生成のための最適化実装。'
     ),
     image: '',
-    technologies: ['Rust', 'Python', 'PyO3', 'GitHub Actions'],
+    technologies: ba(
+      ['Rust', 'Python', 'PyO3', 'GitHub Actions'],
+      ['Rust', 'Python', 'PyO3', 'GitHub Actions']
+    ),
     repo: 'https://github.com/tomonatu8/pymallows'
   }
 ];
