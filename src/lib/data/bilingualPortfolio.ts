@@ -114,10 +114,31 @@ export const experience: LocalizedExperience[] = [
       ['Computational Chemistry', 'Optimizations', 'Applied Mathematics', 'Python', 'C++'],
       ['計算化学', '最適化', '応用数学', 'Python', 'C++']
     ),
-    isFullTime: false
+    employmentType: bt('Part-time', 'パートタイム')
   },
 
   // Liquitousも書いておく
+
+  {
+    title: bt('Research and Development, Engineer', 'R&D, エンジニア'),
+    company: bt('Liquitous, Inc.', '株式会社Liquitous'),
+    location: bt('Kanagawa, Japan', '神奈川, 日本'),
+    startDate: '2022',
+    endDate: 'Present',
+    description: ba(
+      [
+        'Development of citizen participation platform for consensus building in Japanese local governments',
+      ],
+      [
+        '日本の自治体向けの市民参加型の合意形成プラットフォームの開発',
+      ]
+    ),
+    technologies: ba(
+      ['Citizen Participation', 'NLP', 'Front-end Web Development', 'Back-end Web Development', 'Python', 'TypeScript / Svelte', 'Gen AI'],
+      ['市民参加', '自然言語処理', 'フロントエンド開発', 'バックエンド開発', 'Python', 'TypeScript / Svelte', '生成AI']
+    ),
+    employmentType: bt('Outsourcing', '業務委託')
+  },
 
   {
     title: bt('Engineer & Data Scientist', 'エンジニア・データサイエンティスト'),
@@ -134,10 +155,10 @@ export const experience: LocalizedExperience[] = [
       ]
     ),
     technologies: ba(
-      ['Algorithm', 'Generative AI', 'NLP', 'Data Analysis', 'Machine Learning', 'Python'],
-      ['アルゴリズム', '生成AI', '自然言語処理', 'データ分析', '機械学習', 'Python']
+      ['Algorithm', 'Gen AI', 'Data Analysis', 'Machine Learning', 'Python'],
+      ['アルゴリズム', '生成AI', 'データ分析', '機械学習', 'Python']
     ),
-    isFullTime: false
+    employmentType: bt('Part-time', 'パートタイム')
   },
   {
     title: bt('Research Visit', 'リサーチ訪問'),
@@ -155,6 +176,7 @@ export const experience: LocalizedExperience[] = [
       ['Research', 'Algorithm', 'Fair Division'],
       ['研究', 'アルゴリズム', '公平分割']
     ),
+    // employmentType: bt('Research Visit', '研究訪問')
   },
   {
     title: bt('Research Scientist Intern', 'リサーチサイエンティスト インターン'),
@@ -176,7 +198,7 @@ export const experience: LocalizedExperience[] = [
       ['Python', 'Algorithm', 'Matching', 'Recommender Systems'],
       ['Python', 'アルゴリズム', 'マッチング', '推薦システム']
     ),
-    isFullTime: false
+    employmentType: bt('Part-time', 'パートタイム')
   },
   {
     title: bt('Research Intern', 'リサーチ インターン'),
@@ -198,10 +220,10 @@ export const experience: LocalizedExperience[] = [
       ['Python', 'Tensorflow', 'Computer Vision', 'Deep Learning'],
       ['Python', 'Tensorflow', 'コンピュータビジョン', '深層学習']
     ),
-    isFullTime: false
+    employmentType: bt('Internship', 'インターンシップ')
   },
   {
-    title: bt('Machine Learning Engineer Intern', '機械学習エンジニア インターン'),
+    title: bt('Machine Learning Engineer', '機械学習エンジニア'),
     company: bt('LegalOn Technologies, Inc.', '株式会社LegalForce (現LegalOn Technologies)'),
     location: bt('Tokyo, Japan', '東京, 日本'),
     startDate: '08/2018',
@@ -220,7 +242,7 @@ export const experience: LocalizedExperience[] = [
       ['Python', 'Machine Learning', 'NLP', 'Flask'],
       ['Python', '機械学習', '自然言語処理', 'Flask']
     ),
-    isFullTime: false
+    employmentType: bt('Internship', 'インターンシップ')
   }
 ];
 
@@ -406,7 +428,7 @@ export const projects: LocalizedProject[] = [
 export const profile: LocalizedProfile = {
   name: bt('Tomohiko Yokoyama', '横山 智彦'),
   title: bt(
-    'A third-years Ph.D. Candidate in Information Science and Technology',
+    'A third-year Ph.D. Candidate in Information Science and Technology',
     '情報理工学系研究科 博士課程 3年'
   ),
   image: '',
@@ -414,12 +436,12 @@ export const profile: LocalizedProfile = {
     [
       // 'From Mie Prefecture, Japan',
       // 'Research and development in applied mathematics, optimization algorithms (matching, allocation), and machine learning.',
-      'Expertise in applied mathematics, optimization (matching / allocation), and machine learning.',
+      'Expertise in applied mathematics, optimization (matching / allocation), and machine learning.',
       // 'Experience in implementing algorithms and AI systems into practical business solutions.',
-      'Experienced in translating research innovations into practical applications.',
+      'Experienced in translating algorithms and AI systems into practical applications.',
       // 'Proven success in implementing optimized matching algorithms.',
       // 'Passionate about bridging research innovations with real-world implementation (business side also). Particularly interested in mechanism design, advanced algorithms, machine learning, and generative AI.',
-      'Passionate about bridging research and real‑world implementation, including the business side. ',
+      'Passionate about bridging research and real-world implementation, including the business side. ',
     ],
     [
       // '三重県出身',

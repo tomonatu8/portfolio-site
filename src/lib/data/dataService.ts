@@ -64,7 +64,7 @@ export function getExperience(lang?: Language) {
       endDate: exp.endDate,
       description: exp.description ? getArray(exp.description, currentLang) : undefined,
       technologies: getArray(exp.technologies, currentLang),
-      isFullTime: exp.isFullTime
+      employmentType: exp.employmentType ? getText(exp.employmentType, currentLang) : undefined
     }));
   } catch (e) {
     console.error('Error in getExperience:', e);

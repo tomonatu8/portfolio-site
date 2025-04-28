@@ -40,7 +40,7 @@ export interface LocalizedExperience {
   endDate: string; 
   description?: BilingualArray;
   technologies: BilingualArray; 
-  isFullTime?: boolean; 
+  employmentType?: BilingualText; 
 }
 
 

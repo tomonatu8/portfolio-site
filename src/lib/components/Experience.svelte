@@ -19,9 +19,9 @@
               <div class="flex flex-col md:flex-row justify-between mb-3">
                 <div>
                   <h3 class="text-xl font-bold text-gray-800">{job.title}</h3>
-                  {#if job.isFullTime !== undefined}
+                  {#if job.employmentType}
                     <span class="inline-block px-2 py-0.5 mt-1 bg-gray-200 text-xs rounded text-gray-700">
-                      {job.isFullTime ? 'Full-time' : 'Part-time'}
+                      {job.employmentType}
                     </span>
                   {/if}
                 </div>
