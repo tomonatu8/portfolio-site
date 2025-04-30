@@ -82,7 +82,7 @@ export const skills: LocalizedSkill[] = [
   // DevOps & Tools
   { name: bt('Docker', 'Docker'), category: 'devops' },
   // { name: 'GCP', category: 'devops' },
-  { name: bt('AWS', 'AWS'), category: 'devops' },
+  // { name: bt('AWS', 'AWS'), category: 'devops' },
   // { name: 'CI/CD', category: 'devops' },
   { name: bt('Code Test', 'コードテスト'), category: 'devops' },
   
