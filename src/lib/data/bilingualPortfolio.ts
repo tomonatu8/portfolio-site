@@ -130,7 +130,7 @@ export const experience: LocalizedExperience[] = [
         'Development of citizen participation platform for consensus building in Japanese local governments',
       ],
       [
-        '日本の自治体向けの市民参加型の合意形成プラットフォームの開発',
+        '自治体向けの市民参加型の合意形成プラットフォームの開発',
       ]
     ),
     technologies: ba(
@@ -190,7 +190,7 @@ export const experience: LocalizedExperience[] = [
         'Implemented a fairness metric system for reciprocal recommendation algorithms',
       ],
       [
-        'マッチングアルゴリズムに関するデータ分析',
+        'マッチングアルゴリズム',
         '相互レコメンデーションアルゴリズムの公平性評価',
       ]
     ),
@@ -436,7 +436,7 @@ export const profile: LocalizedProfile = {
     [
       // 'From Mie Prefecture, Japan',
       // 'Research and development in applied mathematics, optimization algorithms (matching, allocation), and machine learning.',
-      'Expertise in applied mathematics, optimization (matching / allocation), and machine learning.',
+      'Expertise in applied mathematics, optimization, mechanism design (matching / allocation), and machine learning.',
       // 'Experience in implementing algorithms and AI systems into practical business solutions.',
       'Experienced in translating algorithms and AI systems into practical applications.',
       // 'Proven success in implementing optimized matching algorithms.',
@@ -445,10 +445,10 @@ export const profile: LocalizedProfile = {
     ],
     [
       // '三重県出身',
-      '応用数学、最適化アルゴリズム（マッチング、配分）、機械学習の研究や実装。',
+      '応用数学、最適化アルゴリズム、メカニズムデザイン（マッチング・配分）、機械学習の研究や実装。',
       // '最適化されたマッチングアルゴリズムの実装における実績。'
-      '高度なアルゴリズムとAIシステムの実用化周りのエンジニアの経験。',
-      '研究レベルのイノベーションと実社会の実装（ビジネスサイド）の橋渡しに強い興味があります。特に、メカニズムデザイン、高度なアルゴリズム、機械学習、生成AIなど。',
+      'アルゴリズム・AIシステムの実用化周りのエンジニアの経験。',
+      '研究レベルのイノベーションと実社会の実装（ビジネスサイド含め）の橋渡しに強い興味があります。特に、メカニズムデザイン、アルゴリズム、機械学習、生成AIなど。',
       // '特に、メカニズムデザイン、高度なアルゴリズム、機械学習、生成AIなどを、どのように社会やビジネスに応用するかに強い関心があります。'
     ]
   ),
