@@ -290,17 +290,37 @@ export const education: LocalizedEducation[] = [
 export const publications: LocalizedPublication[] = [
   // Proceedings or Journals
   {
-    title: btNoTranslate('Kajibuntan: A house chore division app'),
-    authors: 'A. Igarashi and T. Yokoyama',
-    venue: btNoTranslate('In Proceedings of the 37th AAAI Conference on Artificial Intelligence (AAAI 2023), pp.16449-16451'),
-    year: 2023,
+    title: btNoTranslate('Asymptotic analysis of weighted fair division'),
+    authors: 'P. Manurangsi, W. Suksompong, and T. Yokoyama',
+    venue: btNoTranslate('In Proceedings of the 34th International Joint Conference on Artificial Intelligence (IJCAI 2025), forthcoming'),
+    year: 2025,
     description: ba(
-      ['Mechanism Design', 'Fair Division', 'Applications'],
-      ['メカニズムデザイン', '公平分割', 'アプリケーション']
+      ['Mechanism Design', 'Weighted Fair Division', 'Asymptotic Analysis'],
+      ['メカニズムデザイン', '重み付き公平分割', '漸近解析']
     ),
-    category: 'conference',
-    url: 'https://ojs.aaai.org/index.php/AAAI/article/view/27075',
-    repo: 'https://github.com/kaji-buntan-project/kaji-buntan'
+    category: 'conference'
+  },
+  {
+    title: btNoTranslate('Probabilistic analysis of stable matching in large markets with siblings'),
+    authors: 'Z. Sun, T. Yokoyama, and M. Yokoo',
+    venue: btNoTranslate('In Proceedings of the 34th International Joint Conference on Artificial Intelligence (IJCAI 2025), forthcoming'),
+    year: 2025,
+    description: ba(
+      ['Mechanism Design', 'Matching', 'Stability'],
+      ['メカニズムデザイン', 'マッチング', '安定性']
+    ),
+    category: 'conference'
+  },
+  {
+    title: btNoTranslate('Asymptotic existence of class envy-free matchings'),
+    authors: 'T. Yokoyama and A. Igarashi',
+    venue: btNoTranslate('In Proceedings of the 18th ACM Conference on Recommender Systems (AAMAS 2025), forthcoming'),
+    year: 2025,
+    description: ba(
+      ['Mechanism Design', 'Matching', 'Fair Division'],
+      ['メカニズムデザイン', 'マッチング', '公平分割']
+    ),
+    category: 'conference'
   },
   {
     title: btNoTranslate('Virtual ligand-assisted optimization: A rational strategy for ligand engineering'),
@@ -340,40 +360,31 @@ export const publications: LocalizedPublication[] = [
     url: 'https://pubs.acs.org/doi/full/10.1021/acs.jpca.4c00204'
   },
   {
-    title: btNoTranslate('Asymptotic existence of class envy-free matchings'),
-    authors: 'T. Yokoyama and A. Igarashi',
-    venue: btNoTranslate('In Proceedings of the 18th ACM Conference on Recommender Systems (AAMAS 2025), forthcoming'),
-    year: 2025,
+    title: btNoTranslate('Kajibuntan: A house chore division app'),
+    authors: 'A. Igarashi and T. Yokoyama',
+    venue: btNoTranslate('In Proceedings of the 37th AAAI Conference on Artificial Intelligence (AAAI 2023), pp.16449-16451'),
+    year: 2023,
     description: ba(
-      ['Mechanism Design', 'Matching', 'Fair Division'],
-      ['メカニズムデザイン', 'マッチング', '公平分割']
+      ['Mechanism Design', 'Fair Division', 'Applications'],
+      ['メカニズムデザイン', '公平分割', 'アプリケーション']
     ),
-    category: 'conference'
+    category: 'conference',
+    url: 'https://ojs.aaai.org/index.php/AAAI/article/view/27075',
+    repo: 'https://github.com/kaji-buntan-project/kaji-buntan'
   },
-  {
-    title: btNoTranslate('Probabilistic analysis of stable matching in large markets with siblings'),
-    authors: 'Z. Sun, T. Yokoyama, and M. Yokoo',
-    venue: btNoTranslate('In Proceedings of the 34th International Joint Conference on Artificial Intelligence (IJCAI 2025), forthcoming'),
-    year: 2025,
-    description: ba(
-      ['Mechanism Design', 'Matching', 'Stability'],
-      ['メカニズムデザイン', 'マッチング', '安定性']
-    ),
-    category: 'conference'
-  },
-  {
-    title: btNoTranslate('Asymptotic analysis of weighted fair division'),
-    authors: 'P. Manurangsi, W. Suksompong, and T. Yokoyama',
-    venue: btNoTranslate('In Proceedings of the 34th International Joint Conference on Artificial Intelligence (IJCAI 2025), forthcoming'),
-    year: 2025,
-    description: ba(
-      ['Mechanism Design', 'Weighted Fair Division', 'Asymptotic Analysis'],
-      ['メカニズムデザイン', '重み付き公平分割', '漸近解析']
-    ),
-    category: 'conference'
-  },
-  
   // Peer-reviewed workshops
+  {
+    title: btNoTranslate('Mechanism-informed preference learning for fair division'),
+    authors: 'A. Igarashi, R. Maruo, K. Takeuchi, and T. Yokoyama',
+    venue: btNoTranslate('In Appears of the GAIW workshop held of part of AAMAS'),
+    year: 2025,
+    description: ba(
+      ['Mechanism Design', 'Machine Learning', 'Fair Division', 'Preference Learning', 'Deep Learning'],
+      ['メカニズムデザイン', '機械学習', '公平分割', '選好学習', '深層学習']
+    ),
+    category: 'workshop',
+    url: 'https://preflib.github.io/gaiw2025/program/'
+  },
   {
     title: btNoTranslate('Probabilistic analysis of stable matching in large markets with siblings'),
     authors: 'Z. Sun, T. Yokoyama, and M. Yokoo',
@@ -387,19 +398,6 @@ export const publications: LocalizedPublication[] = [
     url: 'https://preflib.github.io/gaiw2024/program/',
     repo: 'https://github.com/tomonatu8/ExtendedSDA'
   },
-  {
-    title: btNoTranslate('Mechanism-informed preference learning for fair division'),
-    authors: 'A. Igarashi, R. Maruo, K. Takeuchi, and T. Yokoyama',
-    venue: btNoTranslate('In Appears of the GAIW workshop held of part of AAMAS'),
-    year: 2025,
-    description: ba(
-      ['Mechanism Design', 'Machine Learning', 'Fair Division', 'Preference Learning', 'Deep Learning'],
-      ['メカニズムデザイン', '機械学習', '公平分割', '選好学習', '深層学習']
-    ),
-    category: 'workshop',
-    url: 'https://preflib.github.io/gaiw2025/program/'
-  },
-  
   // Publicly available preprints
   {
     title: btNoTranslate('Position fair mechanisms allocating indivisible goods'),

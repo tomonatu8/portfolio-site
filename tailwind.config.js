@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         primary: '#4b5563', // gray-600
+        'primary-dark': '#374151', // gray-700 (darker version for hover states)
         secondary: '#9ca3af', // gray-400
         background: '#f9fafb', // gray-50
         dark: '#1f2937' // gray-800
