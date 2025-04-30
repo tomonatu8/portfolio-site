@@ -350,6 +350,28 @@ export const publications: LocalizedPublication[] = [
     ),
     category: 'conference'
   },
+  {
+    title: btNoTranslate('Probabilistic analysis of stable matching in large markets with siblings'),
+    authors: 'Z. Sun, T. Yokoyama, and M. Yokoo',
+    venue: btNoTranslate('In Proceedings of the 34th International Joint Conference on Artificial Intelligence (IJCAI 2025), forthcoming'),
+    year: 2025,
+    description: ba(
+      ['Mechanism Design', 'Matching', 'Stability'],
+      ['メカニズムデザイン', 'マッチング', '安定性']
+    ),
+    category: 'conference'
+  },
+  {
+    title: btNoTranslate('Asymptotic analysis of weighted fair division'),
+    authors: 'P. Manurangsi, W. Suksompong, and T. Yokoyama',
+    venue: btNoTranslate('In Proceedings of the 34th International Joint Conference on Artificial Intelligence (IJCAI 2025), forthcoming'),
+    year: 2025,
+    description: ba(
+      ['Mechanism Design', 'Weighted Fair Division', 'Asymptotic Analysis'],
+      ['メカニズムデザイン', '重み付き公平分割', '漸近解析']
+    ),
+    category: 'conference'
+  },
   
   // Peer-reviewed workshops
   {
