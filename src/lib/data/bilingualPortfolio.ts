@@ -298,7 +298,8 @@ export const publications: LocalizedPublication[] = [
       ['Mechanism Design', 'Weighted Fair Division', 'Asymptotic Analysis'],
       ['メカニズムデザイン', '重み付き公平分割', '漸近解析']
     ),
-    category: 'conference'
+    category: 'conference',
+    url: 'https://arxiv.org/abs/2504.21728',
   },
   {
     title: btNoTranslate('Probabilistic analysis of stable matching in large markets with siblings'),
@@ -309,18 +310,21 @@ export const publications: LocalizedPublication[] = [
       ['Mechanism Design', 'Matching', 'Stability'],
       ['メカニズムデザイン', 'マッチング', '安定性']
     ),
-    category: 'conference'
+    category: 'conference',
+    url: 'https://arxiv.org/abs/2501.13043',
+    repo: 'https://github.com/tomonatu8/ExtendedSDA'
   },
   {
     title: btNoTranslate('Asymptotic existence of class envy-free matchings'),
     authors: 'T. Yokoyama and A. Igarashi',
-    venue: btNoTranslate('In Proceedings of the 18th ACM Conference on Recommender Systems (AAMAS 2025), forthcoming'),
+    venue: btNoTranslate('In Proceedings of the 24th International Conference on Autonomous Agents and Multi-Agent Systems (AAMAS 2025), forthcoming'),
     year: 2025,
     description: ba(
       ['Mechanism Design', 'Matching', 'Fair Division'],
       ['メカニズムデザイン', 'マッチング', '公平分割']
     ),
-    category: 'conference'
+    category: 'conference',
+    url: 'https://arxiv.org/abs/2502.14371',
   },
   {
     title: btNoTranslate('Virtual ligand-assisted optimization: A rational strategy for ligand engineering'),
