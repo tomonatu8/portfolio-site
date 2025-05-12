@@ -477,8 +477,10 @@ export const profile: LocalizedProfile = {
     ]
   ),
   jobSeekingInfo: bt(
-    'Seeking full-time positions from October 2025. Please feel free to contact me.',
-    '2025年10月以降のフルタイムポジションを探しています。お気軽にご連絡ください。'
+    'Seeking full-time positions from October 2025.',
+    //  Please feel free to contact me.',
+    '現在2025年10月以降のフルタイムポジションを探しています。',
+    // お気軽にご連絡ください。'
   ),
   email: 'tomohiko.yokoyama.888@gmail.com',
   github: 'https://github.com/tomonatu8',
