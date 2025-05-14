@@ -7,35 +7,41 @@
   $: education = getEducation($language);
 </script>
 
-<section id="education" class="py-16 bg-gray-50">
-  <div class="container mx-auto px-4">
+<section id="education" class="pt-0 pb-4 bg-white">
+  <div class="container mx-auto px-4 max-w-4xl">
     <h2 class="section-title">{t(sectionTitles.education, $language)}</h2>
     
     <div class="content-container">
-      <div class="space-y-8">
+      <div class="space-y-0">
         {#each education as edu}
-          <div class="flex flex-col md:flex-row">
-            <div class="md:w-3/4 mb-4 md:mb-0">
-              <h3 class="text-xl font-bold mb-2 text-gray-800">{edu.degree}</h3>
-              <div class="text-gray-700 font-medium mb-2">{edu.institution}</div>
-              {#if edu.location}
-                <div class="text-gray-600 text-sm mb-2">{edu.location}</div>
-              {/if}
+          <div class="mb-2">
+            <div class="">
+              <div class="mb-0.5">
+                <div class="flex flex-wrap items-baseline gap-x-2">
+                  <h3 class="text-base font-bold text-gray-800">{edu.degree}</h3>
+                  <span class="text-gray-600 text-xs">
+                    ({edu.startDate} - {$language === 'ja' && edu.endDate && edu.endDate.includes('Expected:') 
+                      ? edu.endDate.replace('Expected:', '卒業予定：') 
+                      : edu.endDate === 'Present' ? ($language === 'ja' ? '現在' : 'Present') : (!edu.endDate ? ($language === 'ja' ? '現在' : 'Present') : edu.endDate)})
+                  </span>
+                </div>
+              </div>
+              
+              <div class="text-gray-700 font-medium mb-0.5 text-sm ml-4">{edu.institution}</div>
+              
               {#if edu.field}
-                <div class="text-gray-700 mb-2">{edu.field}</div>
+                <div class="text-gray-700 mb-0.5 text-sm ml-4">{edu.field}</div>
               {/if}
+              
               {#if edu.description.length > 0}
-                <div class="prose text-gray-600">
-                  <ul class="list-disc pl-5 space-y-1">
+                <div class="prose text-gray-600 mb-0.5">
+                  <div class="space-y-0 ml-4">
                     {#each edu.description as item}
-                      <li>{item}</li>
+                      <p class="text-xs">{item}</p>
                     {/each}
-                  </ul>
+                  </div>
                 </div>
               {/if}
-            </div>
-            <div class="md:w-1/4 md:pl-8 md:text-right">
-              <div class="text-gray-700 font-medium">{edu.startDate} - {edu.endDate || 'Present'}</div>
             </div>
           </div>
         {/each}

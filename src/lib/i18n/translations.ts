@@ -26,8 +26,8 @@ export const nav: Translations = {
     ja: '発表論文'
   },
   projects: {
-    en: 'Projects',
-    ja: 'プロジェクト'
+    en: 'OSS Projects',
+    ja: 'OSS プロジェクト'
   },
   skills: {
     en: 'Skills',
@@ -54,8 +54,8 @@ export const sectionTitles: Translations = {
     ja: '発表論文'
   },
   projects: {
-    en: 'Projects',
-    ja: 'プロジェクト'
+    en: 'OSS Projects',
+    ja: 'OSS プロジェクト'
   },
   skills: {
     en: 'Skills',
@@ -103,7 +103,7 @@ export const publications: Translations = {
   },
   paper: {
     en: 'Paper',
-    ja: '論文'
+    ja: 'Paper'
   },
   github: {
     en: 'GitHub',
@@ -119,7 +119,7 @@ export const projects: Translations = {
   },
   liveDemo: {
     en: 'Live Demo',
-    ja: 'デモ'
+    ja: 'Live Demo'
   }
 };
 

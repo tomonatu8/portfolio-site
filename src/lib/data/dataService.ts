@@ -7,8 +7,10 @@ import type { BilingualText, BilingualArray } from './localizedData';
 const isBrowser = typeof window !== 'undefined';
 
 // Helper function to get text based on current language
-export function getText(text: BilingualText, lang?: Language): string {
+export function getText(text: BilingualText | undefined, lang?: Language): string {
   try {
+    if (!text) return '';
+    
     const currentLang = lang || (isBrowser ? get(language) : 'en');
     return text[currentLang] || text.en || '';
   } catch (e) {
@@ -64,7 +66,8 @@ export function getExperience(lang?: Language) {
       endDate: exp.endDate,
       description: exp.description ? getArray(exp.description, currentLang) : undefined,
       technologies: getArray(exp.technologies, currentLang),
-      employmentType: exp.employmentType ? getText(exp.employmentType, currentLang) : undefined
+      employmentType: exp.employmentType ? getText(exp.employmentType, currentLang) : undefined,
+      experienceType: exp.experienceType
     }));
   } catch (e) {
     console.error('Error in getExperience:', e);

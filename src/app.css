@@ -5,12 +5,12 @@
 /* Custom styles */
 @layer components {
   .section-title {
-    @apply text-2xl font-bold mb-8 text-center text-gray-800;
-    @apply after:content-[''] after:block after:w-16 after:h-1 after:bg-primary after:mx-auto after:mt-2;
+    @apply text-2xl font-bold mb-4 text-left text-gray-800;
+    @apply after:content-[''] after:block after:w-16 after:h-0.5 after:bg-primary after:ml-0 after:mt-1.5;
   }
   
   .content-container {
-    @apply max-w-4xl mx-auto;
+    @apply max-w-4xl mx-auto px-0;
   }
 }
 

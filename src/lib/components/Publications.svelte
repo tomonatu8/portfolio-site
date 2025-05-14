@@ -24,44 +24,38 @@
   let workshops: any[] = [];
   let preprints: any[] = [];
   
-  // アニメーション用の変数
-  let visible = false;
-  onMount(() => {
-    visible = true;
-  });
 </script>
 
-<section id="publications" class="py-16 bg-white">
-  <div class="container mx-auto px-4">
+<section id="publications" class="py-10 bg-white">
+  <div class="container mx-auto px-4 max-w-4xl">
     <h2 class="section-title">{t(sectionTitles.publications, $language)}</h2>
     
-    {#if visible}
       <div class="content-container" in:fly={{ y: 20, duration: 500, delay: 100 }}>
-        <div class="mb-10">
-          <h3 class="text-xl font-bold mb-4">{t(pubTranslations.proceedingsJournals, $language)}</h3>
-          <div class="space-y-6">
+        <div class="mb-6">
+          <h3 class="text-lg font-bold mb-3">{t(pubTranslations.proceedingsJournals, $language)}</h3>
+          <div class="space-y-4">
             {#each journalAndConference as pub, index}
               <div 
-                class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 p-5"
+                class="py-3"
                 in:fly={{ y: 20, duration: 300, delay: index * 100 }}
               >
                 <!-- タイトル -->
-                <h4 class="text-lg font-bold mb-2 text-gray-800">{pub.title}</h4>
+                <h4 class="text-base font-bold mb-1 text-gray-800">{pub.title}</h4>
                 
                 <!-- 著者名 -->
-                <p class="text-gray-700 mb-2">
-                  <span class="font-medium">Authors:</span> {pub.authors}
+                <p class="text-gray-700 mb-1 text-xs">
+                  {pub.authors}
                 </p>
                 
                 <!-- 掲載情報（イタリック体で区別） -->
-                <p class="text-gray-600 italic mb-3">
+                <p class="text-gray-600 italic mb-2 text-xs">
                   {pub.venue}, {pub.year}
                 </p>
                 
                 <!-- 研究キーワード（タグ表示） -->
-                <div class="flex flex-wrap gap-2 mb-4">
+                <div class="flex flex-wrap gap-1.5 mb-2">
                   {#each pub.description as tag}
-                    <span class="px-2 py-1 bg-gray-100 text-xs rounded text-gray-700">{tag}</span>
+                    <span class="px-1.5 py-0.5 bg-gray-100 text-xs rounded text-gray-700">{tag}</span>
                   {/each}
                 </div>
                 
@@ -102,31 +96,31 @@
         </div>
 
         {#if workshops.length > 0}
-          <div class="mb-10">
-            <h3 class="text-xl font-bold mb-4">{t(pubTranslations.workshops, $language)}</h3>
-            <div class="space-y-6">
+          <div class="mb-6">
+            <h3 class="text-lg font-bold mb-3">{t(pubTranslations.workshops, $language)}</h3>
+            <div class="space-y-4">
               {#each workshops as pub, index}
                 <div 
-                  class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 p-5"
+                  class="py-3"
                   in:fly={{ y: 20, duration: 300, delay: index * 100 }}
                 >
                   <!-- タイトル -->
-                  <h4 class="text-lg font-bold mb-2 text-gray-800">{pub.title}</h4>
+                  <h4 class="text-base font-bold mb-1 text-gray-800">{pub.title}</h4>
                   
                   <!-- 著者名 -->
-                  <p class="text-gray-700 mb-2">
-                    <span class="font-medium">Authors:</span> {pub.authors}
+                  <p class="text-gray-700 mb-1 text-xs">
+                    {pub.authors}
                   </p>
                   
                   <!-- 掲載情報（イタリック体で区別） -->
-                  <p class="text-gray-600 italic mb-3">
+                  <p class="text-gray-600 italic mb-2 text-xs">
                     {pub.venue}, {pub.year}
                   </p>
                   
                   <!-- 研究キーワード（タグ表示） -->
-                  <div class="flex flex-wrap gap-2 mb-4">
+                  <div class="flex flex-wrap gap-1.5 mb-2">
                     {#each pub.description as tag}
-                      <span class="px-2 py-1 bg-gray-100 text-xs rounded text-gray-700">{tag}</span>
+                      <span class="px-1.5 py-0.5 bg-gray-100 text-xs rounded text-gray-700">{tag}</span>
                     {/each}
                   </div>
                   
@@ -169,30 +163,30 @@
 
         {#if preprints.length > 0}
           <div>
-            <h3 class="text-xl font-bold mb-4">{t(pubTranslations.preprints, $language)}</h3>
-            <div class="space-y-6">
+            <h3 class="text-lg font-bold mb-3">{t(pubTranslations.preprints, $language)}</h3>
+            <div class="space-y-4">
               {#each preprints as pub, index}
                 <div 
-                  class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 p-5"
+                  class="py-3"
                   in:fly={{ y: 20, duration: 300, delay: index * 100 }}
                 >
                   <!-- タイトル -->
-                  <h4 class="text-lg font-bold mb-2 text-gray-800">{pub.title}</h4>
+                  <h4 class="text-base font-bold mb-1 text-gray-800">{pub.title}</h4>
                   
                   <!-- 著者名 -->
-                  <p class="text-gray-700 mb-2">
-                    <span class="font-medium">Authors:</span> {pub.authors}
+                  <p class="text-gray-700 mb-1 text-xs">
+                    {pub.authors}
                   </p>
                   
                   <!-- 掲載情報（イタリック体で区別） -->
-                  <p class="text-gray-600 italic mb-3">
+                  <p class="text-gray-600 italic mb-2 text-xs">
                     {pub.venue}, {pub.year}
                   </p>
                   
                   <!-- 研究キーワード（タグ表示） -->
-                  <div class="flex flex-wrap gap-2 mb-4">
+                  <div class="flex flex-wrap gap-1.5 mb-2">
                     {#each pub.description as tag}
-                      <span class="px-2 py-1 bg-gray-100 text-xs rounded text-gray-700">{tag}</span>
+                      <span class="px-1.5 py-0.5 bg-gray-100 text-xs rounded text-gray-700">{tag}</span>
                     {/each}
                   </div>
                   
@@ -233,6 +227,5 @@
           </div>
         {/if}
       </div>
-    {/if}
   </div>
 </section>

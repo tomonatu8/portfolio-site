@@ -13,7 +13,7 @@ export interface LocalizedProfile {
   name: BilingualText; 
   title: BilingualText;
   image: string; 
-  bio: BilingualArray;
+  bio: BilingualText; // 配列からテキストに変更
   jobSeekingInfo?: BilingualText; 
   email: string; 
   github: string; 
@@ -24,7 +24,7 @@ export interface LocalizedProfile {
 export interface LocalizedEducation {
   institution: BilingualText;
   degree: BilingualText;
-  field: BilingualText;
+  field?: BilingualText;
   location: BilingualText;
   startDate: string;
   endDate: string;
@@ -35,12 +35,13 @@ export interface LocalizedEducation {
 export interface LocalizedExperience {
   company: BilingualText;
   title: BilingualText;
-  location: BilingualText;
+  location?: BilingualText;
   startDate: string; 
   endDate: string; 
   description?: BilingualArray;
-  technologies: BilingualArray; 
+  technologies?: BilingualArray; 
   employmentType?: BilingualText; 
+  experienceType: string; // 'research' | 'engineering' のいずれか
 }
 
 
@@ -56,8 +57,7 @@ export interface LocalizedPublication {
   authors: string; 
   venue: BilingualText;
   category: string; 
-  year: number; 
-  description: BilingualArray; 
+  description?: BilingualArray; 
   url?: string; 
   repo?: string; 
 }
@@ -67,7 +67,7 @@ export interface LocalizedProject {
   title: BilingualText;
   description: BilingualText;
   image: string; 
-  technologies: BilingualArray;
+  technologies?: BilingualArray;
   repo?: string; 
   demo?: string; 
 }

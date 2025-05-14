@@ -1,8 +1,9 @@
 <script lang="ts">
   import Hero from '$lib/components/Hero.svelte';
   import Education from '$lib/components/Education.svelte';
-  import Experience from '$lib/components/Experience.svelte';
-  import Publications from '$lib/components/Publications.svelte';
+  import Research from '$lib/components/Research.svelte';
+  import ResearchExperience from '$lib/components/ResearchExperience.svelte';
+  import EngineerExperience from '$lib/components/EngineerExperience.svelte';
   import Projects from '$lib/components/Projects.svelte';
   import Skills from '$lib/components/Skills.svelte';
 </script>
@@ -12,8 +13,9 @@
 </svelte:head>
 
 <Hero />
+<Research />
+<ResearchExperience />
+<EngineerExperience />
 <Education />
-<Experience />
-<Publications />
 <Projects />
-<Skills />
+<!-- <Skills /> -->

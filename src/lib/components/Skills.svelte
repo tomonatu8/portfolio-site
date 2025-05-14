@@ -27,20 +27,20 @@
   let otherProgSkills: any[] = [];
 </script>
 
-<section id="skills" class="py-16 bg-gray-50">
-  <div class="container mx-auto px-4">
+<section id="skills" class="py-10 bg-white">
+  <div class="container mx-auto px-4 max-w-4xl">
     <h2 class="section-title">{t(sectionTitles.skills, $language)}</h2>
     
     <div class="content-container">
-      <div class="space-y-8">
+      <div class="space-y-6">
         <!-- Programming languages -->
         <div>
-          <h3 class="text-lg font-medium mb-4 text-gray-700">{t(skillsTranslations.programmingLanguages, $language)}</h3>
-          <div class="space-y-4">
+          <h3 class="text-base font-medium mb-3 text-gray-700">{t(skillsTranslations.programmingLanguages, $language)}</h3>
+          <div class="space-y-3">
             {#each progLangs as skill}
               <div>
-                <p class="font-medium text-gray-700">{skill.name}</p>
-                <p class="text-gray-600 text-sm">{skill.description}</p>
+                <p class="font-medium text-gray-700 text-sm">{skill.name}</p>
+                <p class="text-gray-600 text-xs">{skill.description}</p>
               </div>
             {/each}
           </div>
@@ -49,8 +49,8 @@
         <!-- Other programming skills -->
         {#if otherProgSkills.length > 0}
           <div>
-            <h3 class="text-lg font-medium mb-2 text-gray-700">{t(skillsTranslations.frameworksLibraries, $language)}</h3>
-            <p class="text-gray-600">
+            <h3 class="text-base font-medium mb-1 text-gray-700">{t(skillsTranslations.frameworksLibraries, $language)}</h3>
+            <p class="text-gray-600 text-xs">
               {otherProgSkills.map(skill => skill.name).join(', ')}
             </p>
           </div>
@@ -58,24 +58,24 @@
         
         <!-- AI & ML -->
         <div>
-          <h3 class="text-lg font-medium mb-2 text-gray-700">{t(skillsTranslations.aiMl, $language)}</h3>
-          <p class="text-gray-600">
+          <h3 class="text-base font-medium mb-1 text-gray-700">{t(skillsTranslations.aiMl, $language)}</h3>
+          <p class="text-gray-600 text-xs">
             {aiSkills.map(skill => skill.name).join(', ')}
           </p>
         </div>
         
         <!-- DevOps & Tools -->
         <div>
-          <h3 class="text-lg font-medium mb-2 text-gray-700">{t(skillsTranslations.devops, $language)}</h3>
-          <p class="text-gray-600">
+          <h3 class="text-base font-medium mb-1 text-gray-700">{t(skillsTranslations.devops, $language)}</h3>
+          <p class="text-gray-600 text-xs">
             {devopsSkills.map(skill => skill.name).join(', ')}
           </p>
         </div>
         
         <!-- Other -->
         <div>
-          <h3 class="text-lg font-medium mb-2 text-gray-700">{t(skillsTranslations.other, $language)}</h3>
-          <p class="text-gray-600">
+          <h3 class="text-base font-medium mb-1 text-gray-700">{t(skillsTranslations.other, $language)}</h3>
+          <p class="text-gray-600 text-xs">
             {otherSkills.map(skill => skill.name).join(', ')}
           </p>
         </div>
