@@ -450,8 +450,8 @@ export const profile: LocalizedProfile = {
   image: '',
   // bioを配列からテキストに変更
   bio: bt(
-    'I am a third-year Ph.D. Candidate in Information Science and Technology specializing in optimization, mechanism design (matching/allocation), and machine learning. I have experience translating algorithms and AI systems into practical applications, with passion for bridging research with real-world implementation. I am seeking full-time positions from October 2025.',
-    '最適化，メカニズムデザイン（マッチング・配分），機械学習分野を専門とする情報理工学系研究科の博士3年です。アルゴリズム・AIシステムの実用化経験があり，研究と社会実装の架け橋に興味，情熱を持っています。2025年10月以降のフルタイムポジションを探しています。'
+    'I am a third-year Ph.D. Candidate in Information Science and Technology specializing in optimization, mechanism design, algorithmic game theory (matching/allocation etc.), and machine learning. I have experience translating algorithms and AI systems into practical applications, with passion for bridging research with real-world implementation. I am seeking full-time positions from October 2025.',
+    '最適化，メカニズムデザイン，アルゴリズム的ゲーム理論（マッチング/配分など），機械学習分野を専門とする情報理工学系研究科の博士3年です。アルゴリズムやAIの実用化経験があり，研究と社会実装の架け橋に興味，情熱を持っています。2025年10月以降のフルタイムポジションを探しています。'
   ),
   jobSeekingInfo: bt(
     'Seeking full-time positions from October 2025.',
