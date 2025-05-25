@@ -144,16 +144,16 @@ export const experience: LocalizedExperience[] = [
 
   {
     title: bt('Engineer, Data Scientist', 'エンジニア, データサイエンティスト'),
-    company: bt('Mirai Share, Inc.', '株式会社未来シェア'),
+    company: bt('Mirai Share Co,. Ltd.', '株式会社未来シェア'),
     location: bt('Tokyo, Japan', '東京, 日本'),
     startDate: '02/2022',
     endDate: '02/2025',
     description: ba(
       [
-        'Engaged mobility optimization algorithms, and data analysis',
+        'I developed algorithms and conducted data analysis related to transportation mobility service.',
       ],
       [
-        'モビリティに関連したアルゴリズム、データの分析',
+        '交通モビリティサービスに関連したアルゴリズムの開発、データの分析',
       ]
     ),
     // technologies: ba(
