@@ -204,7 +204,7 @@ export const experience: LocalizedExperience[] = [
     experienceType: 'research'
   },
   {
-    title: bt('Research Intern', 'R&D インターンシップ'),
+    title: bt('R&D Internship', 'R&D インターンシップ'),
     company: bt('NTT, Inc.', 'NTT株式会社'),
     location: bt('Tokyo, Japan', '東京, 日本'),
     startDate: '09/2020',
