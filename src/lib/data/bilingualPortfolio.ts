@@ -323,7 +323,7 @@ export const publications: LocalizedPublication[] = [
     //   ['メカニズムデザイン', '機械学習', '公平分割', '選好学習', '深層学習']
     // ),
     category: 'workshop',
-    url: 'https://preflib.github.io/gaiw2025/program/'
+    url: 'https://drive.google.com/file/d/1Vr9RMkI8AndfQ7X9KT7Fy1E3RzSEzmz3/view'
   },
   {
     title: btNoTranslate('Asymptotic existence of class envy-free matchings'),
@@ -334,7 +334,7 @@ export const publications: LocalizedPublication[] = [
     //   ['メカニズムデザイン', 'マッチング', '公平分割']
     // ),
     category: 'conference',
-    url: 'https://arxiv.org/abs/2502.14371',
+    url: 'https://plibin.github.io/aamas-25-proceedings/pdfs/p2244.pdf',
   },
   {
     title: btNoTranslate('Virtual ligand-assisted optimization: A rational strategy for ligand engineering'),
