@@ -24,7 +24,7 @@ export const skills: LocalizedSkill[] = [
     name: bt('Algorithm Design', 'アルゴリズム設計'), 
     description: bt(
       'Expertise in algorithm design and optimization, particularly in matching algorithms and mechanism design.',
-      'マッチングアルゴリズムやメカニズムデザインに特化したアルゴリズム設計と最適化の専門知識。'
+      'マッチングアルゴリズムやメカニズムデザインに特化したアルゴリズム設計と最適化の専門知識'
     ),
     category: 'algorithm' 
   },
@@ -32,7 +32,7 @@ export const skills: LocalizedSkill[] = [
     name: bt('Applied Mathematics', '応用数学'), 
     description: bt(
       'Strong foundation in applied mathematics, particularly in optimization and computational methods.',
-      '最適化や計算手法に特化した応用数学の強固な基盤。'
+      '最適化や計算手法に特化した応用数学の強固な基盤'
     ),
     category: 'algorithm' 
   },
@@ -41,8 +41,8 @@ export const skills: LocalizedSkill[] = [
   { 
     name: bt('Python', 'Python'), 
     description: bt(
-      'Main language for production-level algorithm development and ML pipelines. Extensive experience with NumPy, Pandas, and scientific computing libraries.',
-      'アルゴリズム開発やMLパイプラインの本番実装で主に使用。PyTorch, NumPy, Pandas, 科学計算ライブラリなど。'
+      'For research coding, algorithm development, and ML pipelines. Extensive experience with NumPy, Pandas, and scientific computing libraries.',
+      '研究コード実装，アルゴリズム開発やMLパイプライン実装などで使用。PyTorch, NumPy, Pandas, 科学計算ライブラリなど'
     ),
     category: 'programming' 
   },
@@ -50,15 +50,15 @@ export const skills: LocalizedSkill[] = [
     name: bt('JavaScript/TypeScript', 'JavaScript/TypeScript'), 
     description: bt(
       'Frontend and backend web development with Node.js, React, Svelte, and other modern frameworks.',
-      'Node.js、ReactやSvelteなど、その他のモダンフレームワークを使用したフロントエンドおよびバックエンドWeb開発。'
+      'ReactやSvelteなどを使用したフロントエンドおよびバックエンドのWeb開発'
     ),
     category: 'programming' 
   },
   { 
     name: bt('Rust', 'Rust'), 
     description: bt(
-      'Performance-critical applications and systems programming. Created Python bindings using PyO3. WebAssembly development for frontend.',
-      'パフォーマンスが重要なアプリケーションとシステムプログラミング。PyO3を使用したPythonバインディングの作成。フロントで利用できるWebAssemblyの開発。'
+      'Algorithm. Created Python bindings using PyO3. WebAssembly development for frontend.',
+      'アルゴリズム実装。PyO3を使用したPythonバインディングの作成。フロントで利用できるWebAssemblyの開発。'
     ),
     category: 'programming' 
   },
@@ -153,7 +153,7 @@ export const experience: LocalizedExperience[] = [
         'I developed algorithms and conducted data analysis related to transportation mobility service.',
       ],
       [
-        '交通モビリティサービスに関連したアルゴリズムの開発、データの分析',
+        '交通モビリティサービスに関連したアルゴリズムの開発，データの分析',
       ]
     ),
     // technologies: ba(
@@ -414,8 +414,8 @@ export const projects: LocalizedProject[] = [
   {
     title: bt('Kajibuntan (Household Chore Division Application)', 'Kajibuntan（家事分担アプリ）'),
     description: bt(
-      'Web application using fair division algorithms for household chore allocation.', //Deployed to production with over 13,000 users.
-      '家事分担のための公平分割アルゴリズムを使用したWebアプリケーション。' //13,000人以上のユーザーを持つ本番サービスとして展開。
+      'We developed a web application using fair division algorithms for household chore allocation.', //Deployed to production with over 13,000 users.
+      '家事分担のための公平分割アルゴリズムを使用したWebアプリケーション' //13,000人以上のユーザーを持つ本番サービスとして展開。
     ),
     image: '',
     // technologies: ba(
@@ -428,8 +428,8 @@ export const projects: LocalizedProject[] = [
   {
     title: bt('PyMallows', 'PyMallows'),
     description: bt(
-      'A Mallows model sampling library written in Rust with Python bindings. Generating votes and rankings.',
-      '投票やランキング生成に利用される, Mallows分布サンプリングのライブラリ. Rust (Pythonバインディング) で実装.'
+      'This is a Mallows model sampling library written in Rust with Python bindings. Generating votes and rankings.',
+      '投票やランキング生成に利用される, Mallows分布サンプリングのライブラリ. Rust (Pythonバインディング) で実装'
     ),
     image: '',
     // technologies: ba(
