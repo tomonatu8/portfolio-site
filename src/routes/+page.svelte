@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-  <title>Tomohiko Yokoyama - Engineering Professional</title>
+  <title>Tomohiko Yokoyama</title>
 </svelte:head>
 
 <Hero />

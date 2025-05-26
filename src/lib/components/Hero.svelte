@@ -44,6 +44,9 @@
           <a href="https://orcid.org/0009-0004-7641-029X" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-primary hover:text-primary-dark transition-colors text-sm">
             ORCID
           </a>
+          <a href="https://scholar.google.com/citations?user=2gp2WlEAAAAJ&hl=ja&authuser=1&oi=sra" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-primary hover:text-primary-dark transition-colors text-sm">
+            Google Scholar
+          </a>
           <a href="https://speakerdeck.com/tomonatu8" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-primary hover:text-primary-dark transition-colors text-sm">
             Speaker Deck
           </a>
