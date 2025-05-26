@@ -150,7 +150,7 @@ export const experience: LocalizedExperience[] = [
     endDate: '02/2025',
     description: ba(
       [
-        'I developed algorithms and conducted data analysis related to transportation mobility service.',
+        'Developed algorithms and data analysis related to transportation mobility service.',
       ],
       [
         '交通モビリティサービスに関連したアルゴリズムの開発，データの分析',
