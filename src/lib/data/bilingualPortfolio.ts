@@ -121,7 +121,7 @@ export const experience: LocalizedExperience[] = [
   // Liquitousも書いておく
 
   {
-    title: bt('R&D, Engineer', 'R&D, エンジニア'),
+    title: bt('R&D Engineer', 'R&D エンジニア'),
     company: bt('Liquitous, Inc.', '株式会社Liquitous'),
     location: bt('Kanagawa, Japan', '神奈川, 日本'),
     startDate: '2022',
@@ -143,7 +143,7 @@ export const experience: LocalizedExperience[] = [
   },
 
   {
-    title: bt('Engineer, Data Scientist', 'エンジニア, データサイエンティスト'),
+    title: bt('ML Engineer, Data Scientist', 'MLエンジニア, データサイエンティスト'),
     company: bt('Mirai Share Co,. Ltd.', '株式会社未来シェア'),
     location: bt('Tokyo, Japan', '東京, 日本'),
     startDate: '02/2022',
@@ -183,7 +183,7 @@ export const experience: LocalizedExperience[] = [
     // employmentType: bt('Research Visit', '研究訪問')
   },
   {
-    title: bt('Research Scientist Intern', 'リサーチサイエンティスト (インターン)'),
+    title: bt('Research Scientist Intern', 'リサーチサイエンティスト インターン'),
     company: bt('CyberAgent, Inc.', '株式会社サイバーエージェント'),
     location: bt('Tokyo, Japan', '東京, 日本'),
     startDate: '02/2023',
@@ -225,7 +225,7 @@ export const experience: LocalizedExperience[] = [
     experienceType: 'research'
   },
   {
-    title: bt('Machine Learning Engineer Intern', '機械学習エンジニア インターン'),
+    title: bt('ML Engineer Intern', 'MLエンジニア インターン'),
     company: bt('LegalOn Technologies, Inc.', '株式会社LegalOn Technologies'),
     location: bt('Tokyo, Japan', '東京, 日本'),
     startDate: '08/2018',
