@@ -334,7 +334,7 @@ export const publications: LocalizedPublication[] = [
     //   ['メカニズムデザイン', 'マッチング', '公平分割']
     // ),
     category: 'conference',
-    url: 'https://plibin.github.io/aamas-25-proceedings/pdfs/p2244.pdf',
+    url: 'https://dl.acm.org/doi/10.5555/3709347.3743864',
   },
   {
     title: btNoTranslate('Virtual ligand-assisted optimization: A rational strategy for ligand engineering'),
