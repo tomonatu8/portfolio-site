@@ -294,7 +294,7 @@ export const publications: LocalizedPublication[] = [
     title: btNoTranslate('Asymptotic analysis of weighted fair division'),
     authors: 'P. Manurangsi, W. Suksompong, and T. Yokoyama',
     // venue: btNoTranslate('In Proceedings of the 34th International Joint Conference on Artificial Intelligence (IJCAI 2025), forthcoming'),
-    venue: btNoTranslate('In Proceedings of IJCAI 2025'),
+    venue: btNoTranslate('Theoretical Computer Science. A preliminary version appeared in Proceedings of IJCAI 2025'),
     // description: ba(
     //   [],
     //   []
