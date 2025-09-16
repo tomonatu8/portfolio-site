@@ -299,8 +299,8 @@ export const publications: LocalizedPublication[] = [
     //   [],
     //   []
     // ),
-    category: 'conference',
-    url: 'https://arxiv.org/abs/2504.21728',
+    category: 'journal',
+    url: 'https://doi.org/10.1016/j.tcs.2025.115533',
   },
   {
     title: btNoTranslate('Probabilistic analysis of stable matching in large markets with siblings'),
