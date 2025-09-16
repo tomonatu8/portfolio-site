@@ -124,7 +124,7 @@ export const experience: LocalizedExperience[] = [
     title: bt('R&D Engineer', 'R&D エンジニア'),
     company: bt('Liquitous, Inc.', '株式会社Liquitous'),
     location: bt('Kanagawa, Japan', '神奈川, 日本'),
-    startDate: '2022',
+    startDate: '09/2022',
     endDate: 'Present',
     description: ba(
       [
