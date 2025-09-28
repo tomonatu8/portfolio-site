@@ -13,9 +13,9 @@
 </svelte:head>
 
 <Hero />
-<Research />
-<ResearchExperience />
 <EngineerExperience />
-<Education />
+<ResearchExperience />
+<Research />
 <Projects />
+<Education />
 <!-- <Skills /> -->

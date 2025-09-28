@@ -98,6 +98,24 @@ export const skills: LocalizedSkill[] = [
 
 // Multilingual experience data
 export const experience: LocalizedExperience[] = [
+
+  {
+    title: bt('Applied Research Engineer', 'Applied Research Engineer'),
+    company: bt('Sakana AI, KK.', 'Sakana AI株式会社'),
+    startDate: '09/2025',
+    endDate: 'Present',
+    description: ba(
+      [
+        'Research and development with LLMs',
+      ],
+      [
+        '生成AIを用いた研究開発',
+      ]
+    ),
+    employmentType: bt('Part-time', 'パートタイム'),
+    experienceType: 'engineering'
+  },
+
   {
     title: bt('Assistant Technical Staff', '技術補佐員'),
     company: bt('The University of Tokyo', '東京大学'),
@@ -183,7 +201,7 @@ export const experience: LocalizedExperience[] = [
     // employmentType: bt('Research Visit', '研究訪問')
   },
   {
-    title: bt('Research Scientist Intern', 'リサーチサイエンティスト インターン'),
+    title: bt('Research Scientist', 'リサーチサイエンティスト'),
     company: bt('CyberAgent, Inc.', '株式会社サイバーエージェント'),
     location: bt('Tokyo, Japan', '東京, 日本'),
     startDate: '02/2023',
@@ -250,19 +268,19 @@ export const experience: LocalizedExperience[] = [
 
 export const education: LocalizedEducation[] = [
   {
-    degree: bt('Doctoral Program in Information Science and Technology', '情報理工学系研究科 博士課程'),
+    degree: bt('PhD in Information Science and Technology, Mathematical Informatics', '情報理工学系研究科 数理情報学 博士課程'),
     institution: bt('The University of Tokyo', '東京大学'),
     // field: bt('Mathematical Informatics', '数理情報学'),
     location: bt('Tokyo, Japan', '東京, 日本'),
     startDate: '10/2022',
-    endDate: 'Expected: 09/2025',
+    endDate: '09/2025',
     // description: ba(
     //   ['Focusing on algorithm design, applied mathematics, and mechanism design'],
     //   ['アルゴリズム、応用数学、最適化、メカニズムデザインなど']
     // )
   },
   {
-    degree: bt('Master of Information Science and Technology', '情報理工学系研究科 修士課程'),
+    degree: bt('Master of Information Science and Technology, Mathematical Informatics', '情報理工学系研究科 数理情報学 修士課程'),
     institution: bt('The University of Tokyo', '東京大学'),
     // field: bt('Mathematical Informatics', '数理情報学'),
     location: bt('Tokyo, Japan', '東京, 日本'),
@@ -274,7 +292,7 @@ export const education: LocalizedEducation[] = [
     // )
   },
   {
-    degree: bt('Bachelor of Engineering', '工学部 計数工学科'),
+    degree: bt('Bachelor of Engineering, Mathematical Engineering and Information Physics', '工学部 計数工学科'),
     institution: bt('The University of Tokyo', '東京大学'),
     // field: bt('Mathematical Engineering and Information Physics', '数理情報工学'),
     location: bt('Tokyo, Japan', '東京, 日本'),
@@ -448,14 +466,14 @@ export const profile: LocalizedProfile = {
     '情報理工学系研究科 博士課程 3年'
   ),
   image: '',
-  // bioを配列からテキストに変更
   bio: bt(
-    'I am a third-year Ph.D. Candidate in Information Science and Technology specializing in optimization, mechanism design, algorithmic game theory (matching/allocation etc.), and machine learning. Recently, my interests have focused particularly on the intersection of machine learning technologies, platforms, and economic fairness. With practical experience in algorithm and AI implementation, I am passionate about bridging the gap between research and real-world applications.',
-    '最適化，メカニズムデザイン，アルゴリズム的ゲーム理論（マッチング/配分など），機械学習分野を専門とする情報理工学系研究科の博士3年生です。最近は特にAI技術やプラットフォームと経済的な公平性の視点に興味があります。また，アルゴリズムや機械学習の実用化経験があり，研究と社会実装の架け橋に興味や情熱を持っています。'
-  ),
-  jobSeekingInfo: bt(
-    'Seeking full-time positions from October 2025.',
-    '現在2025年10月以降のフルタイムポジションを探しています。'
+    `My interests have focused particularly on the intersection of machine learning and platforms, as well as how to leverage LLMs in agentic applications. 
+    With practical experience in algorithm and AI implementation, I am passionate about bridging the gap between research and real-world applications. 
+    Currently working as an Applied Research Engineer at Sakana AI. 
+    I received my PhD in Information Science and Technology from the University of Tokyo under the supervision of Prof. Satoru Iwata, specializing in optimization, mechanism design, algorithmic game theory, and machine learning.`,
+    `AI技術やプラットフォーム、LLMのマルチエージェント的活用に興味があり、Sakana AIでApplied Research Engineerとして働いています。
+    また、研究と社会実装の架け橋に興味や情熱を持っています。
+    2025年9月に東京大学情報理工で博士号を取得しました（指導教員：岩田覚教授）、専門は最適化、マルチエージェントシステム、アルゴリズム的ゲーム理論、機械学習分野です。`
   ),
   email: 'tomohiko.yokoyama.888@gmail.com',
   github: 'https://github.com/tomonatu8',
