@@ -112,7 +112,7 @@ export const experience: LocalizedExperience[] = [
         '生成AIを用いた研究開発',
       ]
     ),
-    employmentType: bt('Part-time', 'パートタイム'),
+    employmentType: bt('Permanent', 'パーマネント'),
     experienceType: 'engineering'
   },
 
@@ -121,7 +121,7 @@ export const experience: LocalizedExperience[] = [
     company: bt('The University of Tokyo', '東京大学'),
     // location: bt('Tokyo', '東京'),
     startDate: '04/2022',
-    endDate: 'Present',
+    endDate: '09/2025',
     // description: ba(
     //   [
     //   ],
@@ -143,7 +143,7 @@ export const experience: LocalizedExperience[] = [
     company: bt('Liquitous, Inc.', '株式会社Liquitous'),
     location: bt('Kanagawa, Japan', '神奈川, 日本'),
     startDate: '09/2022',
-    endDate: 'Present',
+    endDate: '09/2025',
     description: ba(
       [
         'Development of citizen participation platform for consensus building in Japanese local governments',
