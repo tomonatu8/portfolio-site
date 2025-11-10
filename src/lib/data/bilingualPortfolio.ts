@@ -309,6 +309,17 @@ export const education: LocalizedEducation[] = [
 export const publications: LocalizedPublication[] = [
   // Proceedings or Journals
   {
+    title: btNoTranslate('Position fair mechanisms allocating indivisible goods'),
+    authors: 'R. Mahara, R. Mizutani, T. Oki, and T. Yokoyama',
+    venue: btNoTranslate('In Proceedings of AAAI 2026'),
+    // description: ba(
+    //   ['Mechanism Design', 'Fair Division'],
+    //   ['メカニズムデザイン', '公平分割']
+    // ),
+    category: 'conference',
+    url: 'https://arxiv.org/abs/2409.06423'
+  },
+  {
     title: btNoTranslate('Asymptotic analysis of weighted fair division'),
     authors: 'P. Manurangsi, W. Suksompong, and T. Yokoyama',
     // venue: btNoTranslate('In Proceedings of the 34th International Joint Conference on Artificial Intelligence (IJCAI 2025), forthcoming'),
@@ -376,17 +387,6 @@ export const publications: LocalizedPublication[] = [
     category: 'conference',
     url: 'https://dl.acm.org/doi/10.1145/3640457.3688130',
     repo: 'https://github.com/CyberAgentAILab/FairReciprocalRecommendation'
-  },
-  {
-    title: btNoTranslate('Position fair mechanisms allocating indivisible goods'),
-    authors: 'R. Mahara, R. Mizutani, T. Oki, and T. Yokoyama',
-    venue: btNoTranslate('In arXiv, 2024'),
-    // description: ba(
-    //   ['Mechanism Design', 'Fair Division'],
-    //   ['メカニズムデザイン', '公平分割']
-    // ),
-    category: 'preprint',
-    url: 'https://arxiv.org/abs/2409.06423'
   },
   {
     title: btNoTranslate('Differentiating the yield of chemical reactions using parameters in first-order kinetic equations to identify elementary steps that control the reactivity from complicated reaction path networks'),
