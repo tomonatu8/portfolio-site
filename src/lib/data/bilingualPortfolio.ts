@@ -73,27 +73,17 @@ export const skills: LocalizedSkill[] = [
   // AI & ML
   { name: bt('Generative AI', '生成AI'), category: 'ai' },
   { name: bt('NLP', '自然言語処理'), category: 'ai' },
-  // { name: 'Computer Vision', category: 'ai' },
-  // { name: 'Recommender Systems', category: 'ai' },
-  // { name: 'Generative AI', category: 'ai' },
   { name: bt('Algorithm', 'アルゴリズム'), category: 'ai' },
   { name: bt('Deep Learning', '深層学習'), category: 'ai' },
   
   // DevOps & Tools
   { name: bt('Docker', 'Docker'), category: 'devops' },
-  // { name: 'GCP', category: 'devops' },
-  // { name: bt('AWS', 'AWS'), category: 'devops' },
-  // { name: 'CI/CD', category: 'devops' },
   { name: bt('Code Test', 'コードテスト'), category: 'devops' },
   
   // Other
-  // { name: 'NoSQL', category: 'other' },
   { name: bt('API Design', 'API設計'), category: 'other' },
   { name: bt('Development with Git', 'Gitを用いた開発'), category: 'other' },
   { name: bt('Team Development', 'チーム開発'), category: 'other' },
-  // { name: 'Algorithm Optimization', category: 'other' }
-
-  // { name: 'Team Development', category: 'soft' },
 ];
 
 // Multilingual experience data
@@ -139,7 +129,7 @@ export const experience: LocalizedExperience[] = [
   // Liquitousも書いておく
 
   {
-    title: bt('R&D Engineer', 'R&D エンジニア'),
+    title: bt('R&D Engineer', 'R&Dエンジニア'),
     company: bt('Liquitous, Inc.', '株式会社Liquitous'),
     location: bt('Kanagawa, Japan', '神奈川, 日本'),
     startDate: '09/2022',
@@ -268,9 +258,8 @@ export const experience: LocalizedExperience[] = [
 
 export const education: LocalizedEducation[] = [
   {
-    degree: bt('PhD in Information Science and Technology, Mathematical Informatics', '情報理工学系研究科 数理情報学 博士課程'),
-    institution: bt('The University of Tokyo', '東京大学'),
-    // field: bt('Mathematical Informatics', '数理情報学'),
+    degree: bt('PhD in Information Science and Technology, Mathematical Informatics', '東京大学 情報理工学系研究科 博士課程修了'),
+    institution: bt('The University of Tokyo', ' '),
     location: bt('Tokyo, Japan', '東京, 日本'),
     startDate: '10/2022',
     endDate: '09/2025',
@@ -280,8 +269,8 @@ export const education: LocalizedEducation[] = [
     // )
   },
   {
-    degree: bt('Master of Information Science and Technology, Mathematical Informatics', '情報理工学系研究科 数理情報学 修士課程'),
-    institution: bt('The University of Tokyo', '東京大学'),
+    degree: bt('Master of Information Science and Technology, Mathematical Informatics', '東京大学 情報理工学系研究科 修士課程修了'),
+    institution: bt('The University of Tokyo', ' '),
     // field: bt('Mathematical Informatics', '数理情報学'),
     location: bt('Tokyo, Japan', '東京, 日本'),
     startDate: '04/2020',
@@ -292,8 +281,8 @@ export const education: LocalizedEducation[] = [
     // )
   },
   {
-    degree: bt('Bachelor of Engineering, Mathematical Engineering and Information Physics', '工学部 計数工学科'),
-    institution: bt('The University of Tokyo', '東京大学'),
+    degree: bt('Bachelor of Engineering, Mathematical Engineering and Information Physics', '東京大学 工学部 計数工学科 卒業'),
+    institution: bt('The University of Tokyo', ' '),
     // field: bt('Mathematical Engineering and Information Physics', '数理情報工学'),
     location: bt('Tokyo, Japan', '東京, 日本'),
     startDate: '04/2016',
@@ -305,63 +294,54 @@ export const education: LocalizedEducation[] = [
   }
 ];
 
-// Multilingual publications data (論文タイトルと学会誌情報は英語のまま)
+// Multilingual publications data
 export const publications: LocalizedPublication[] = [
-  // Proceedings or Journals
+  {
+    title: btNoTranslate('Balancing fairness and high match rates in reciprocal recommender systems: A Nash social welfare approach'),
+    authors: 'Y. Tomita and T. Yokoyama',
+    venue: btNoTranslate('ACM Transactions on Recommender Systems, 2026'),
+    category: 'journal',
+  },
+   {
+    title: btNoTranslate('Mechanism-informed learning for fair division'),
+    authors: 'A. Igarashi, R. Maruo, K. Takeuchi, and T. Yokoyama',
+    venue: btNoTranslate('In Proceedings of AAMAS 2026'),
+    category: 'conference',
+    url: 'https://openreview.net/forum?id=Z546lz5A4B'
+  },
   {
     title: btNoTranslate('Position fair mechanisms allocating indivisible goods'),
     authors: 'R. Mahara, R. Mizutani, T. Oki, and T. Yokoyama',
     venue: btNoTranslate('In Proceedings of AAAI 2026'),
-    // description: ba(
-    //   ['Mechanism Design', 'Fair Division'],
-    //   ['メカニズムデザイン', '公平分割']
-    // ),
     category: 'conference',
     url: 'https://arxiv.org/abs/2409.06423'
   },
   {
     title: btNoTranslate('Asymptotic analysis of weighted fair division'),
     authors: 'P. Manurangsi, W. Suksompong, and T. Yokoyama',
-    // venue: btNoTranslate('In Proceedings of the 34th International Joint Conference on Artificial Intelligence (IJCAI 2025), forthcoming'),
-    venue: btNoTranslate('Theoretical Computer Science. A preliminary version appeared in Proceedings of IJCAI 2025'),
-    // description: ba(
-    //   [],
-    //   []
-    // ),
+    venue: btNoTranslate('Theoretical Computer Science, 2025'),
     category: 'journal',
     url: 'https://doi.org/10.1016/j.tcs.2025.115533',
+  },
+  {
+    title: btNoTranslate('Asymptotic analysis of weighted fair division'),
+    authors: 'P. Manurangsi, W. Suksompong, and T. Yokoyama',
+    venue: btNoTranslate('In Proceedings of IJCAI 2025'),
+    category: 'conference',
+    url: 'https://www.ijcai.org/proceedings/2025/443',
   },
   {
     title: btNoTranslate('Probabilistic analysis of stable matching in large markets with siblings'),
     authors: 'Z. Sun, T. Yokoyama, and M. Yokoo',
     venue: btNoTranslate('In Proceedings of IJCAI 2025'),
-    // description: ba(
-    //   ['Mechanism Design', 'Matching', 'Stability'],
-    //   ['メカニズムデザイン', 'マッチング', '安定性']
-    // ),
     category: 'conference',
     url: 'https://arxiv.org/abs/2501.13043',
     repo: 'https://github.com/tomonatu8/ExtendedSDA'
   },
   {
-    title: btNoTranslate('Mechanism-informed preference learning for fair division'),
-    authors: 'A. Igarashi, R. Maruo, K. Takeuchi, and T. Yokoyama',
-    venue: btNoTranslate('In the GAIW workshop in AAMAS 2025'),
-    // description: ba(
-    //   ['Mechanism Design', 'Machine Learning', 'Fair Division', 'Preference Learning', 'Deep Learning'],
-    //   ['メカニズムデザイン', '機械学習', '公平分割', '選好学習', '深層学習']
-    // ),
-    category: 'workshop',
-    url: 'https://drive.google.com/file/d/1Vr9RMkI8AndfQ7X9KT7Fy1E3RzSEzmz3/view'
-  },
-  {
     title: btNoTranslate('Asymptotic existence of class envy-free matchings'),
     authors: 'T. Yokoyama and A. Igarashi',
     venue: btNoTranslate('In Proceedings of AAMAS 2025'),
-    // description: ba(
-    //   ['Mechanism Design', 'Matching', 'Fair Division'],
-    //   ['メカニズムデザイン', 'マッチング', '公平分割']
-    // ),
     category: 'conference',
     url: 'https://dl.acm.org/doi/10.5555/3709347.3743864',
   },
@@ -369,10 +349,6 @@ export const publications: LocalizedPublication[] = [
     title: btNoTranslate('Virtual ligand-assisted optimization: A rational strategy for ligand engineering'),
     authors: 'W. Matsuoka, T. Oki, R. Yamada, T. Yokoyama, S. Suda, C. M. Saunders, B. B. Skjelstad, Y. Harabuchi, N. Fey, S. Iwata, and S. Maeda',
     venue: btNoTranslate('ACS Catalysis, 2024'),
-    // description: ba(
-    //   ['Computational Chemistry', 'Optimization'],
-    //   ['計算化学', '最適化']
-    // ),
     category: 'journal',
     url: 'https://pubs.acs.org/doi/10.1021/acscatal.4c06003'
   },
@@ -392,10 +368,6 @@ export const publications: LocalizedPublication[] = [
     title: btNoTranslate('Differentiating the yield of chemical reactions using parameters in first-order kinetic equations to identify elementary steps that control the reactivity from complicated reaction path networks'),
     authors: 'Y. Harabuchi, T. Yokoyama, W. Matsuoka, T. Oki, S. Iwata, and S. Maeda',
     venue: btNoTranslate('The Journal of Physical Chemistry A, 2024'),
-    // description: ba(
-    //   ['Computational Chemistry'],
-    //   ['計算化学']
-    // ),
     category: 'journal',
     url: 'https://pubs.acs.org/doi/full/10.1021/acs.jpca.4c00204'
   },
@@ -403,31 +375,13 @@ export const publications: LocalizedPublication[] = [
     title: btNoTranslate('Kajibuntan: A house chore division app'),
     authors: 'A. Igarashi and T. Yokoyama',
     venue: btNoTranslate('In Proceedings of AAAI 2023'),
-    // description: ba(
-    //   ['Mechanism Design', 'Fair Division', 'Applications'],
-    //   ['メカニズムデザイン', '公平分割', 'アプリケーション']
-    // ),
     category: 'conference',
     url: 'https://ojs.aaai.org/index.php/AAAI/article/view/27075',
     repo: 'https://github.com/kaji-buntan-project/kaji-buntan'
   },
-  // {
-  //   title: btNoTranslate('Probabilistic analysis of stable matching in large markets with siblings'),
-  //   authors: 'Z. Sun, T. Yokoyama, and M. Yokoo',
-  //   venue: btNoTranslate('In the GAIW workshop held as part of AAMAS'),
-  //   year: 2024,
-  //   description: ba(
-  //     ['Mechanism Design', 'Matching'],
-  //     ['メカニズムデザイン', 'マッチング']
-  //   ),
-  //   category: 'workshop',
-  //   url: 'https://preflib.github.io/gaiw2024/program/',
-  //   repo: 'https://github.com/tomonatu8/ExtendedSDA'
-  // },
-  // Publicly available preprints
 ];
 
-// Multilingual projects data
+// OSS projects data
 export const projects: LocalizedProject[] = [
   {
     title: bt('Kajibuntan (Household Chore Division Application)', 'Kajibuntan（家事分担アプリ）'),
@@ -458,12 +412,12 @@ export const projects: LocalizedProject[] = [
   }
 ];
 
-// Multilingual profile data
+// Profile data
 export const profile: LocalizedProfile = {
   name: bt('Tomohiko Yokoyama', '横山 智彦'),
   title: bt(
-    'A third-year Ph.D. Candidate in Information Science and Technology',
-    '情報理工学系研究科 博士課程 3年'
+    'Applied Research Engineer at Sakana AI',
+    'Sakana AI Applied Research Engineer'
   ),
   image: '',
   bio: bt(

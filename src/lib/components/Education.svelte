@@ -12,11 +12,11 @@
     <h2 class="section-title">{t(sectionTitles.education, $language)}</h2>
     
     <div class="content-container">
-      <div class="space-y-0">
+      <div class="space-y-4">
         {#each education as edu}
-          <div class="mb-2">
+          <div class="mb-4">
             <div class="">
-              <div class="mb-0.5">
+              <div class="mb-0.5 ml-4">
                 <div class="flex flex-wrap items-baseline gap-x-2">
                   <h3 class="text-base font-bold text-gray-800">{edu.degree}</h3>
                   <span class="text-gray-600 text-xs">
@@ -27,15 +27,17 @@
                 </div>
               </div>
               
-              <div class="text-gray-700 font-medium mb-0.5 text-sm ml-4">{edu.institution}</div>
+              {#if edu.institution && edu.institution.trim()}
+                <div class="text-gray-700 font-medium mb-0.5 text-sm ml-8">{edu.institution}</div>
+              {/if}
               
               {#if edu.field}
-                <div class="text-gray-700 mb-0.5 text-sm ml-4">{edu.field}</div>
+                <div class="text-gray-700 mb-0.5 text-sm ml-8">{edu.field}</div>
               {/if}
               
               {#if edu.description.length > 0}
                 <div class="prose text-gray-600 mb-0.5">
-                  <div class="space-y-0 ml-4">
+                  <div class="space-y-0 ml-8">
                     {#each edu.description as item}
                       <p class="text-xs">{item}</p>
                     {/each}

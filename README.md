@@ -1,4 +1,4 @@
-# Tomohiko Yokoyama - Personal Portfolio
+# Personal Portfolio
 
 This is my personal portfolio website showcasing my skills, experience, education, publications and projects.
 
@@ -40,4 +40,4 @@ The site is automatically deployed to GitHub Pages when changes are pushed to th
 
 ## License
 
-All rights reserved, Tomohiko Yokoyama.
+All rights reserved.

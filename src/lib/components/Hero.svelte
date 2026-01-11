@@ -20,7 +20,7 @@
           <p class="text-gray-700 text-sm md:text-base">{profile.bio}</p>
         </div>
         
-        <div class="flex flex-wrap gap-3">
+        <div class="flex flex-wrap gap-3 ml-2">
           <a href="mailto:{profile.email}" class="inline-flex items-center text-primary hover:text-primary-dark transition-colors text-sm">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />

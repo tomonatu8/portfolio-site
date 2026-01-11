@@ -16,7 +16,7 @@
         {#each projects as project}
           <div class="">
             <div>
-              <div class="mb-1">
+              <div class="mb-1 ml-4">
                 <span style="display: inline;">
                   <span class="text-base font-bold text-gray-800">{project.title}</span>
                   {#if project.repo || project.demo}
@@ -53,9 +53,9 @@
                   {/if}
                 </span>
               </div>
-              <p class="text-gray-600 mb-2 text-xs ml-4">{project.description}</p>
+              <p class="text-gray-600 mb-2 text-xs ml-8">{project.description}</p>
               
-              <div class="flex flex-wrap gap-1.5 mb-2 ml-4">
+              <div class="flex flex-wrap gap-1.5 mb-2 ml-8">
                 {#each project.technologies as tech}
                   <span class="px-1.5 py-0.5 bg-gray-100 text-xs rounded text-gray-700">{tech}</span>
                 {/each}

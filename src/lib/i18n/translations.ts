@@ -49,9 +49,21 @@ export const sectionTitles: Translations = {
     en: 'Experience',
     ja: '経歴'
   },
+  engineeringExperience: {
+    en: 'Engineering Experience',
+    ja: 'エンジニア'
+  },
+  researchExperience: {
+    en: 'Research Experience',
+    ja: '研究'
+  },
   publications: {
     en: 'Publications',
     ja: '発表論文'
+  },
+  research: {
+    en: 'Publications',
+    ja: '査読あり論文'
   },
   projects: {
     en: 'OSS Projects',
@@ -92,6 +104,14 @@ export const publications: Translations = {
   proceedingsJournals: {
     en: 'Proceedings & Journals',
     ja: '学会誌・ジャーナル'
+  },
+  conferences: {
+    en: 'Conference',
+    ja: '国際会議'
+  },
+  journals: {
+    en: 'Journal',
+    ja: 'ジャーナル'
   },
   workshops: {
     en: 'Peer-reviewed Workshops',
