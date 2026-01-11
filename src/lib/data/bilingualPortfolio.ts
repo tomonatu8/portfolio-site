@@ -91,17 +91,17 @@ export const experience: LocalizedExperience[] = [
 
   {
     title: bt('Applied Research Engineer', 'Applied Research Engineer'),
-    company: bt('Sakana AI, KK.', 'Sakana AI株式会社'),
+    company: bt('Sakana AI', 'Sakana AI'),
     startDate: '09/2025',
     endDate: 'Present',
-    description: ba(
-      [
-        'Research and development with LLMs',
-      ],
-      [
-        '生成AIを用いた研究開発',
-      ]
-    ),
+    // description: ba(
+    //   [
+    //     'Research and development with LLMs',
+    //   ],
+    //   [
+    //     '生成AIを用いた研究開発',
+    //   ]
+    // ),
     employmentType: bt('Permanent', 'パーマネント'),
     experienceType: 'engineering'
   },
@@ -130,18 +130,18 @@ export const experience: LocalizedExperience[] = [
 
   {
     title: bt('R&D Engineer', 'R&Dエンジニア'),
-    company: bt('Liquitous, Inc.', '株式会社Liquitous'),
+    company: bt('Liquitous', 'Liquitous'),
     location: bt('Kanagawa, Japan', '神奈川, 日本'),
     startDate: '09/2022',
     endDate: '09/2025',
-    description: ba(
-      [
-        'Development of citizen participation platform for consensus building in Japanese local governments',
-      ],
-      [
-        '自治体向けの市民参加型の合意形成プラットフォームの開発',
-      ]
-    ),
+    // description: ba(
+    //   [
+    //     'Development of citizen participation platform for consensus building in Japanese local governments',
+    //   ],
+    //   [
+    //     '自治体向けの市民参加型の合意形成プラットフォームの開発',
+    //   ]
+    // ),
     // technologies: ba(
     //   ['Citizen Participation', 'NLP', 'Front-end Web Development', 'Back-end Web Development', 'Python', 'TypeScript / Svelte', 'Gen AI'],
     //   ['市民参加', '自然言語処理', 'フロントエンド開発', 'バックエンド開発', 'Python', 'TypeScript / Svelte', '生成AI']
@@ -152,18 +152,18 @@ export const experience: LocalizedExperience[] = [
 
   {
     title: bt('ML Engineer, Data Scientist', 'MLエンジニア, データサイエンティスト'),
-    company: bt('Mirai Share Co,. Ltd.', '株式会社未来シェア'),
+    company: bt('Mirai Share', '未来シェア'),
     location: bt('Tokyo, Japan', '東京, 日本'),
     startDate: '02/2022',
     endDate: '02/2025',
-    description: ba(
-      [
-        'Developed algorithms and data analysis related to transportation mobility service.',
-      ],
-      [
-        '交通モビリティサービスに関連したアルゴリズムの開発，データの分析',
-      ]
-    ),
+    // description: ba(
+    //   [
+    //     'Developed algorithms and data analysis related to transportation mobility service.',
+    //   ],
+    //   [
+    //     '交通モビリティサービスに関連したアルゴリズムの開発，データの分析',
+    //   ]
+    // ),
     // technologies: ba(
     //   ['Algorithm', 'Gen AI', 'Data Analysis', 'Machine Learning', 'Python'],
     //   ['アルゴリズム', '生成AI', 'データ分析', '機械学習', 'Python']
@@ -192,18 +192,18 @@ export const experience: LocalizedExperience[] = [
   },
   {
     title: bt('Research Scientist', 'リサーチサイエンティスト'),
-    company: bt('CyberAgent, Inc.', '株式会社サイバーエージェント'),
+    company: bt('CyberAgent', 'サイバーエージェント'),
     location: bt('Tokyo, Japan', '東京, 日本'),
     startDate: '02/2023',
     endDate: '08/2024',
-    description: ba(
-      [
-        'Deployed matching algorithms, and studied fairness metrics for reciprocal recommender systems',
-      ],
-      [
-        'マッチングアルゴリズムやそのデータ分析，推薦アルゴリズムの開発',
-      ]
-    ),
+    // description: ba(
+    //   [
+    //     'Deployed matching algorithms, and studied fairness metrics for reciprocal recommender systems',
+    //   ],
+    //   [
+    //     'マッチングアルゴリズムやそのデータ分析，推薦アルゴリズムの開発',
+    //   ]
+    // ),
     // technologies: ba(
     //   ['Python', 'Algorithm', 'Matching', 'Recommender Systems'],
     //   ['Python', 'アルゴリズム', 'マッチング', '推薦システム']
@@ -213,18 +213,18 @@ export const experience: LocalizedExperience[] = [
   },
   {
     title: bt('R&D Internship', 'R&D インターンシップ'),
-    company: bt('NTT, Inc.', 'NTT株式会社'),
+    company: bt('NTT', 'NTT'),
     location: bt('Tokyo, Japan', '東京, 日本'),
     startDate: '09/2020',
     endDate: '09/2020',
-    description: ba(
-      [
-        'Implemented and optimized deep neural network on image recognition',
-      ],
-      [
-        '画像認識における深層学習アルゴリズムの実装，最適化',
-      ]
-    ),
+    // description: ba(
+    //   [
+    //     'Implemented and optimized deep neural network on image recognition',
+    //   ],
+    //   [
+    //     '画像認識における深層学習アルゴリズムの実装，最適化',
+    //   ]
+    // ),
     // technologies: ba(
     //   ['Python', 'Tensorflow', 'Computer Vision', 'Deep Learning'],
     //   ['Python', 'Tensorflow', 'コンピュータビジョン', '深層学習']
@@ -234,18 +234,18 @@ export const experience: LocalizedExperience[] = [
   },
   {
     title: bt('ML Engineer Intern', 'MLエンジニア インターン'),
-    company: bt('LegalOn Technologies, Inc.', '株式会社LegalOn Technologies'),
+    company: bt('LegalOn Technologies', 'LegalOn Technologies'),
     location: bt('Tokyo, Japan', '東京, 日本'),
     startDate: '08/2018',
     endDate: '12/2018',
-    description: ba(
-      [
-        'Built NLP pipelines for legal document analysis',
-      ],
-      [
-        '法的文書分析のためのNLPパイプライン',
-      ]
-    ),
+    // description: ba(
+    //   [
+    //     'Built NLP pipelines for legal document analysis',
+    //   ],
+    //   [
+    //     '法的文書分析のためのNLPパイプライン',
+    //   ]
+    // ),
     // technologies: ba(
     //   ['Python', 'Machine Learning', 'NLP', 'Flask'],
     //   ['Python', '機械学習', '自然言語処理', 'Flask']
@@ -386,8 +386,8 @@ export const projects: LocalizedProject[] = [
   {
     title: bt('Kajibuntan (Household Chore Division Application)', 'Kajibuntan（家事分担アプリ）'),
     description: bt(
-      'We developed a web application using fair division algorithms for household chore allocation.', //Deployed to production with over 13,000 users.
-      '家事分担のための公平分割アルゴリズムを使用したWebアプリケーション' //13,000人以上のユーザーを持つ本番サービスとして展開。
+      'We developed a web application using fair division algorithms for household chore allocation. Developed as part of a Code for Japan project. Featured on NHK (Japan\'s national public broadcasting).',
+      '家事分担のための公平分割アルゴリズムを使用したWebアプリケーション。Code for Japanのプロジェクトの一環として、NHKで特集されました。'
     ),
     image: '',
     // technologies: ba(
@@ -395,7 +395,8 @@ export const projects: LocalizedProject[] = [
     //   ['アルゴリズム', '公平分割', 'Node.js', 'React', 'Rust', 'WebAssembly', 'Docker', 'AWS']
     // ),
     repo: 'https://github.com/kaji-buntan-project/kaji-buntan',
-    demo: 'https://housechore-division.com'
+    demo: 'https://housechore-division.com',
+    article: 'https://www.nhk.or.jp/info-blog/525255.html'
   },
   {
     title: bt('PyMallows', 'PyMallows'),

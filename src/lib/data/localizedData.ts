@@ -66,8 +66,9 @@ export interface LocalizedPublication {
 export interface LocalizedProject {
   title: BilingualText;
   description: BilingualText;
-  image: string; 
+  image: string;
   technologies?: BilingualArray;
-  repo?: string; 
-  demo?: string; 
+  repo?: string;
+  demo?: string;
+  article?: string;
 }

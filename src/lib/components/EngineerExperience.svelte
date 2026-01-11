@@ -2,7 +2,6 @@
   import { language, t } from '$lib/i18n/i18n';
   import { sectionTitles } from '$lib/i18n/translations';
   import { getExperience } from '$lib/data/dataService';
-  import type { LocalizedExperience } from '$lib/data/localizedData';
   
   // Subscribe to language changes
   $: allExperience = getExperience($language);

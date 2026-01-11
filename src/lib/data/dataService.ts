@@ -107,7 +107,8 @@ export function getProjects(lang?: Language) {
       image: proj.image,
       technologies: getArray(proj.technologies, currentLang),
       repo: proj.repo,
-      demo: proj.demo
+      demo: proj.demo,
+      article: proj.article
     }));
   } catch (e) {
     console.error('Error in getProjects:', e);

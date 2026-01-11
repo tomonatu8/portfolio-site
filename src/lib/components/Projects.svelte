@@ -49,6 +49,20 @@
                           {t(projectsTranslations.liveDemo, $language)}
                         </a>
                       {/if}
+                      {#if project.article}
+                        <a 
+                          href={project.article} 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          class="inline-flex items-center text-primary hover:text-primary-dark transition-colors text-xs whitespace-nowrap"
+                        >
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"></path>
+                            <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"></path>
+                          </svg>
+                          Article
+                        </a>
+                      {/if}
                     </span>
                   {/if}
                 </span>
