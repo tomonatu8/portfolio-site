@@ -17,7 +17,7 @@
         
         <!-- バイオを箇条書きからシングル段落に変更、タイトルと求職情報は不要（バイオ内に含まれる） -->
         <div class="mb-4">
-          <p class="text-gray-700 text-sm md:text-base">{profile.bio}</p>
+          <p class="text-gray-700 text-sm md:text-base text-justify">{profile.bio}</p>
         </div>
         
         <div class="flex flex-wrap gap-3 ml-2">
