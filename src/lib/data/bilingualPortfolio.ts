@@ -319,6 +319,10 @@ export const publications: LocalizedPublication[] = [
     title: btNoTranslate('Position fair mechanisms allocating indivisible goods'),
     authors: 'R. Mahara, R. Mizutani, T. Oki, and T. Yokoyama',
     venue: btNoTranslate('In Proceedings of AAAI 2026'),
+    description: ba(
+      ['* Oral presentation (top 5%)'],
+      ['* Oral発表（上位5%）']
+    ),
     category: 'conference',
     url: 'https://arxiv.org/abs/2409.06423'
   },
