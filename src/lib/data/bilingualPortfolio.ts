@@ -297,6 +297,12 @@ export const education: LocalizedEducation[] = [
 // Multilingual publications data
 export const publications: LocalizedPublication[] = [
   {
+    title: btNoTranslate('Reaction yield oscillates over reaction time in first-order chemical reactions'),
+    authors: 'Y. Harabuchi, T. Yokoyama, K. Katayama, S. Maeda, T. Oki, and S. Iwata',
+    venue: btNoTranslate('RSC Advances, 2026'),
+    category: 'journal',
+  },
+  {
     title: btNoTranslate('Balancing fairness and high match rates in reciprocal recommender systems: A Nash social welfare approach'),
     authors: 'Y. Tomita and T. Yokoyama',
     venue: btNoTranslate('ACM Transactions on Recommender Systems, 2026'),
