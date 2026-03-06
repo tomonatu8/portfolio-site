@@ -4,7 +4,8 @@
   import { language, toggleLanguage, t } from '$lib/i18n/i18n';
   import { nav, footer } from '$lib/i18n/translations';
   import { base } from '$app/paths';
-  
+  import { browser } from '$app/environment';
+
   let mobileMenuOpen = false;
   let mounted = false;
   let lastScrollY = 0;
@@ -36,6 +37,11 @@
     };
   });
   
+  // Update <html lang> attribute when language changes
+  $: if (browser) {
+    document.documentElement.lang = $language;
+  }
+
   // スクロールハンドラー
   function handleScroll() {
     const currentScrollY = window.scrollY;
