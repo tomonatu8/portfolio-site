@@ -23,6 +23,7 @@
         <div class="ml-2 flex flex-wrap gap-3">
           <a
             href="mailto:{profile.email}"
+            aria-label="Email"
             class="inline-flex items-center text-sm text-primary transition-colors hover:text-primary-dark"
           >
             <svg
@@ -45,6 +46,7 @@
             href={profile.linkedin}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="LinkedIn"
             class="inline-flex items-center text-sm text-primary transition-colors hover:text-primary-dark"
           >
             <svg
@@ -63,6 +65,7 @@
             href={profile.github}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="GitHub"
             class="inline-flex items-center text-sm text-primary transition-colors hover:text-primary-dark"
           >
             <svg
