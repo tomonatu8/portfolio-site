@@ -10,11 +10,13 @@
 
   const SITE_URL = 'https://tomonatu8.github.io/portfolio-site';
 
-  $: pageTitle = $language === 'ja'
-    ? '横山智彦 (Tomohiko Yokoyama) | ポートフォリオ'
-    : 'Tomohiko Yokoyama (横山智彦) | Portfolio';
+  $: pageTitle =
+    $language === 'ja'
+      ? '横山智彦 (Tomohiko Yokoyama) | ポートフォリオ'
+      : 'Tomohiko Yokoyama (横山智彦) | Portfolio';
 
-  const metaDescription = 'Tomohiko Yokoyama (横山智彦) - Applied Research Engineer at Sakana AI. PhD, The University of Tokyo. Multi-agent systems, algorithms, and machine learning.';
+  const metaDescription =
+    'Tomohiko Yokoyama (横山智彦) - Applied Research Engineer at Sakana AI. PhD, The University of Tokyo. Multi-agent systems, algorithms, and machine learning.';
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -44,7 +46,8 @@
       'Fair Division',
       'Matching Theory'
     ],
-    description: 'Applied Research Engineer at Sakana AI with a PhD from the University of Tokyo, specializing in algorithms, machine learning, and mechanism design.'
+    description:
+      'Applied Research Engineer at Sakana AI with a PhD from the University of Tokyo, specializing in algorithms, machine learning, and mechanism design.'
   };
 </script>
 
@@ -52,7 +55,10 @@
   <title>{pageTitle}</title>
   <meta name="description" content={metaDescription} />
   <meta name="author" content="Tomohiko Yokoyama" />
-  <meta name="keywords" content="Tomohiko Yokoyama, 横山智彦, Sakana AI, University of Tokyo, 東京大学, algorithm, machine learning, mechanism design, fair division, portfolio, researcher, engineer" />
+  <meta
+    name="keywords"
+    content="Tomohiko Yokoyama, 横山智彦, Sakana AI, University of Tokyo, 東京大学, algorithm, machine learning, mechanism design, fair division, portfolio, researcher, engineer"
+  />
 
   <link rel="canonical" href="{SITE_URL}/" />
 

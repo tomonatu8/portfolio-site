@@ -7,7 +7,7 @@ declare global {
     // interface PageData {}
     // interface Platform {}
   }
-  
+
   // データ型の定義
   interface Skill {
     name: string;

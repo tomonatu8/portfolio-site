@@ -8,7 +8,7 @@ permissions:
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 concurrency:
-  group: "pages"
+  group: 'pages'
   cancel-in-progress: false
 
 on:
@@ -39,7 +39,7 @@ jobs:
         run: npm run build
         env:
           NODE_ENV: production
-          VITE_BASE_PATH: "/portfolio-site"
+          VITE_BASE_PATH: '/portfolio-site'
 
       - name: Add .nojekyll file
         run: touch build/.nojekyll

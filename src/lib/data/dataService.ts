@@ -10,7 +10,7 @@ const isBrowser = typeof window !== 'undefined';
 export function getText(text: BilingualText | undefined, lang?: Language): string {
   try {
     if (!text) return '';
-    
+
     const currentLang = lang || (isBrowser ? get(language) : 'en');
     return text[currentLang] || text.en || '';
   } catch (e) {
@@ -24,7 +24,7 @@ export function getArray(array: BilingualArray | undefined, lang?: Language): st
   try {
     // 配列が未定義または null の場合は空の配列を返す
     if (!array) return [];
-    
+
     const currentLang = lang || (isBrowser ? get(language) : 'en');
     return array[currentLang] || array.en || [];
   } catch (e) {
@@ -37,8 +37,8 @@ export function getArray(array: BilingualArray | undefined, lang?: Language): st
 export function getEducation(lang?: Language) {
   try {
     const currentLang = lang || (isBrowser ? get(language) : 'en');
-    
-    return bilingualData.education.map(edu => ({
+
+    return bilingualData.education.map((edu) => ({
       degree: getText(edu.degree, currentLang),
       institution: getText(edu.institution, currentLang),
       field: getText(edu.field, currentLang),
@@ -57,8 +57,8 @@ export function getEducation(lang?: Language) {
 export function getExperience(lang?: Language) {
   try {
     const currentLang = lang || (isBrowser ? get(language) : 'en');
-    
-    return bilingualData.experience.map(exp => ({
+
+    return bilingualData.experience.map((exp) => ({
       title: getText(exp.title, currentLang),
       company: getText(exp.company, currentLang),
       location: getText(exp.location, currentLang),
@@ -79,8 +79,8 @@ export function getExperience(lang?: Language) {
 export function getPublications(lang?: Language) {
   try {
     const currentLang = lang || (isBrowser ? get(language) : 'en');
-    
-    return bilingualData.publications.map(pub => ({
+
+    return bilingualData.publications.map((pub) => ({
       title: getText(pub.title, currentLang),
       authors: pub.authors,
       venue: getText(pub.venue, currentLang),
@@ -99,8 +99,8 @@ export function getPublications(lang?: Language) {
 export function getProjects(lang?: Language) {
   try {
     const currentLang = lang || (isBrowser ? get(language) : 'en');
-    
-    return bilingualData.projects.map(proj => ({
+
+    return bilingualData.projects.map((proj) => ({
       title: getText(proj.title, currentLang),
       description: getText(proj.description, currentLang),
       image: proj.image,
@@ -119,8 +119,8 @@ export function getProjects(lang?: Language) {
 export function getSkills(lang?: Language) {
   try {
     const currentLang = lang || (isBrowser ? get(language) : 'en');
-    
-    return bilingualData.skills.map(skill => ({
+
+    return bilingualData.skills.map((skill) => ({
       name: getText(skill.name, currentLang),
       description: skill.description ? getText(skill.description, currentLang) : undefined,
       category: skill.category
@@ -135,13 +135,15 @@ export function getSkills(lang?: Language) {
 export function getProfile(lang?: Language) {
   try {
     const currentLang = lang || (isBrowser ? get(language) : 'en');
-    
+
     return {
       name: getText(bilingualData.profile.name, currentLang),
       title: getText(bilingualData.profile.title, currentLang),
       image: bilingualData.profile.image,
       bio: getText(bilingualData.profile.bio, currentLang),
-      jobSeekingInfo: bilingualData.profile.jobSeekingInfo ? getText(bilingualData.profile.jobSeekingInfo, currentLang) : undefined,
+      jobSeekingInfo: bilingualData.profile.jobSeekingInfo
+        ? getText(bilingualData.profile.jobSeekingInfo, currentLang)
+        : undefined,
       email: bilingualData.profile.email,
       github: bilingualData.profile.github,
       linkedin: bilingualData.profile.linkedin
