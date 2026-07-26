@@ -298,12 +298,14 @@ export const publications: LocalizedPublication[] = [
     authors: 'Y. Harabuchi, T. Yokoyama, K. Katayama, S. Maeda, T. Oki, and S. Iwata',
     venue: btNoTranslate('RSC Advances, 2026'),
     category: 'journal',
+    url: 'https://pubs.rsc.org/ra/article/16/9/7681/909197/Reaction-yield-oscillates-over-reaction-time-in',
   },
   {
     title: btNoTranslate('Balancing fairness and high match rates in reciprocal recommender systems: A Nash social welfare approach'),
     authors: 'Y. Tomita and T. Yokoyama',
     venue: btNoTranslate('ACM Transactions on Recommender Systems, 2026'),
     category: 'journal',
+    url: 'https://dl.acm.org/doi/10.1145/3793538',
   },
   {
     title: btNoTranslate('Mechanism-informed learning for fair division'),
@@ -321,14 +323,14 @@ export const publications: LocalizedPublication[] = [
       ['* Oral発表（上位5%）']
     ),
     category: 'conference',
-    url: 'https://arxiv.org/abs/2409.06423'
+    url: 'https://dl.acm.org/doi/10.1609/aaai.v40i20.38763'
   },
   {
     title: btNoTranslate('Asymptotic analysis of weighted fair division'),
     authors: 'P. Manurangsi, W. Suksompong, and T. Yokoyama',
     venue: btNoTranslate('Theoretical Computer Science, 2025'),
     category: 'journal',
-    url: 'https://doi.org/10.1016/j.tcs.2025.115533',
+    url: 'https://www.sciencedirect.com/science/article/pii/S0304397525004712',
   },
   {
     title: btNoTranslate('Asymptotic analysis of weighted fair division'),
