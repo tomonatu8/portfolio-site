@@ -36,6 +36,7 @@ The internationalization system is built with the following components:
 ### Content Translation
 
 Dynamic content (portfolio data) is stored with bilingual support:
+
 - `BilingualText` type for single text items with both languages
 - `BilingualArray` type for arrays of texts with both languages
 
@@ -51,11 +52,13 @@ Dynamic content (portfolio data) is stored with bilingual support:
 To add support for a new language (e.g., Spanish):
 
 1. Update the Language type in `translations.ts`:
+
    ```ts
    export type Language = 'en' | 'ja' | 'es';
    ```
 
 2. Add the new language to all translation objects:
+
    ```ts
    about: {
      en: 'About',
@@ -65,6 +68,7 @@ To add support for a new language (e.g., Spanish):
    ```
 
 3. Update the bilingual types to multilingual types in `localizedData.ts`:
+
    ```ts
    export type MultilingualText = {
      en: string;
@@ -76,6 +80,7 @@ To add support for a new language (e.g., Spanish):
 4. Update the portfolio data to include the new language
 
 5. Add language detection in `i18n.ts`:
+
    ```ts
    if (browserLang === 'ja') return 'ja';
    if (browserLang === 'es') return 'es';

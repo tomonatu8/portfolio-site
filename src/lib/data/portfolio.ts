@@ -1,11 +1,10 @@
 export const personalInfo = {
-  email: 'example@example.com', 
+  email: 'example@example.com',
   linkedin: 'https://linkedin.com/in/yourprofile',
   github: 'https://github.com/yourusername',
   location: 'Tokyo, Japan',
-  phone: '+81 XXX-XXXX-XXXX' 
+  phone: '+81 XXX-XXXX-XXXX'
 };
-
 
 export const skills = {
   programming: [
@@ -20,19 +19,11 @@ export const skills = {
     { name: 'Natural Language Processing' },
     { name: 'Computer Vision' }
   ],
-  devopsSkills: [
-    { name: 'Docker' },
-    { name: 'CI/CD' },
-    { name: 'Git' }
-  ],
+  devopsSkills: [{ name: 'Docker' }, { name: 'CI/CD' }, { name: 'Git' }],
   otherSkills: [
     { name: 'Project Management' },
     { name: 'Research' },
     { name: 'Technical Writing' }
   ],
-  otherProgramming: [
-    { name: 'SQL' },
-    { name: 'HTML/CSS' },
-    { name: 'R' }
-  ]
+  otherProgramming: [{ name: 'SQL' }, { name: 'HTML/CSS' }, { name: 'R' }]
 };

@@ -9,14 +9,14 @@ const isBrowser = typeof window !== 'undefined';
 const getBrowserLanguage = (): Language => {
   // サーバーサイドでは常に英語を返す
   if (!isBrowser) return 'en';
-  
+
   try {
     // ブラウザ環境でのみ実行
     const savedLang = localStorage.getItem('preferred_language');
     if (savedLang === 'en' || savedLang === 'ja') {
       return savedLang;
     }
-    
+
     // ブラウザの言語設定を検出
     const browserLang = navigator.language.substring(0, 2);
     if (browserLang === 'ja') {
@@ -27,7 +27,7 @@ const getBrowserLanguage = (): Language => {
     // エラーが発生した場合は英語をデフォルトとする
     return 'en';
   }
-  
+
   // デフォルトは英語
   return 'en';
 };
@@ -50,9 +50,9 @@ if (isBrowser) {
 // 言語切り替え関数
 export function toggleLanguage() {
   try {
-    language.update(currentLang => {
+    language.update((currentLang) => {
       const newLang = currentLang === 'en' ? 'ja' : 'en';
-      
+
       // ブラウザ環境のみでlocalStorageに保存
       if (isBrowser) {
         try {
@@ -61,7 +61,7 @@ export function toggleLanguage() {
           console.error('Error saving language preference:', e);
         }
       }
-      
+
       return newLang;
     });
   } catch (e) {
@@ -70,11 +70,14 @@ export function toggleLanguage() {
 }
 
 // 翻訳ヘルパー関数（エラーを防止するための対策を追加）
-export function t(translations: {en: string, ja: string} | undefined | null, lang: Language): string {
+export function t(
+  translations: { en: string; ja: string } | undefined | null,
+  lang: Language
+): string {
   try {
     if (!translations) return '';
     if (!lang || (lang !== 'en' && lang !== 'ja')) lang = 'en';
-    
+
     const translation = translations[lang];
     return translation || translations['en'] || '';
   } catch (e) {

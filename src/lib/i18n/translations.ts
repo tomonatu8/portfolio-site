@@ -38,7 +38,7 @@ export const nav: Translations = {
 // セクションタイトル
 export const sectionTitles: Translations = {
   about: {
-    en: '',  // About Me タイトルを削除
+    en: '', // About Me タイトルを削除
     ja: ''
   },
   education: {

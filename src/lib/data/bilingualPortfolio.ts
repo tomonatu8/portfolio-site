@@ -13,81 +13,79 @@ const bt = (en: string, ja: string): BilingualText => ({ en, ja });
 const btNoTranslate = (en: string): BilingualText => ({ en, ja: en });
 const ba = (en: string[], ja: string[]): BilingualArray => ({ en, ja });
 
-
 export const skills: LocalizedSkill[] = [
   // Languages
-  {name: bt('Japanese', '日本語'), category: 'language'},
-  {name: bt('English', '英語'), category: 'language'},
+  { name: bt('Japanese', '日本語'), category: 'language' },
+  { name: bt('English', '英語'), category: 'language' },
 
   // Algorithm & Systems
-  { 
-    name: bt('Algorithm Design', 'アルゴリズム設計'), 
+  {
+    name: bt('Algorithm Design', 'アルゴリズム設計'),
     description: bt(
       'Expertise in algorithm design and optimization, particularly in matching algorithms and mechanism design.',
       'マッチングアルゴリズムやメカニズムデザインに特化したアルゴリズム設計と最適化の専門知識'
     ),
-    category: 'algorithm' 
+    category: 'algorithm'
   },
-  { 
-    name: bt('Applied Mathematics', '応用数学'), 
+  {
+    name: bt('Applied Mathematics', '応用数学'),
     description: bt(
       'Strong foundation in applied mathematics, particularly in optimization and computational methods.',
       '最適化や計算手法に特化した応用数学の強固な基盤'
     ),
-    category: 'algorithm' 
+    category: 'algorithm'
   },
 
   // Programming Languages
-  { 
-    name: bt('Python', 'Python'), 
+  {
+    name: bt('Python', 'Python'),
     description: bt(
       'For research coding, algorithm development, and ML pipelines. Extensive experience with NumPy, Pandas, and scientific computing libraries.',
       '研究コード実装，アルゴリズム開発やMLパイプライン実装などで使用。PyTorch, NumPy, Pandas, 科学計算ライブラリなど'
     ),
-    category: 'programming' 
+    category: 'programming'
   },
-  { 
-    name: bt('JavaScript/TypeScript', 'JavaScript/TypeScript'), 
+  {
+    name: bt('JavaScript/TypeScript', 'JavaScript/TypeScript'),
     description: bt(
       'Frontend and backend web development with Node.js, React, Svelte, and other modern frameworks.',
       'ReactやSvelteなどを使用したフロントエンドおよびバックエンドのWeb開発'
     ),
-    category: 'programming' 
+    category: 'programming'
   },
-  { 
-    name: bt('Rust', 'Rust'), 
+  {
+    name: bt('Rust', 'Rust'),
     description: bt(
       'Algorithm. Created Python bindings using PyO3. WebAssembly development for frontend.',
       'アルゴリズム実装。PyO3を使用したPythonバインディングの作成。フロントで利用できるWebAssemblyの開発。'
     ),
-    category: 'programming' 
+    category: 'programming'
   },
-  
+
   // Frameworks & Libraries (no description needed)
   // { name: 'React', category: 'programming' },
   // { name: 'Node.js', category: 'programming' },
   // { name: 'Svelte', category: 'programming' },
   // { name: 'TensorFlow', category: 'ai' },
-  
+
   // AI & ML
   { name: bt('Generative AI', '生成AI'), category: 'ai' },
   { name: bt('NLP', '自然言語処理'), category: 'ai' },
   { name: bt('Algorithm', 'アルゴリズム'), category: 'ai' },
   { name: bt('Deep Learning', '深層学習'), category: 'ai' },
-  
+
   // DevOps & Tools
   { name: bt('Docker', 'Docker'), category: 'devops' },
   { name: bt('Code Test', 'コードテスト'), category: 'devops' },
-  
+
   // Other
   { name: bt('API Design', 'API設計'), category: 'other' },
   { name: bt('Development with Git', 'Gitを用いた開発'), category: 'other' },
-  { name: bt('Team Development', 'チーム開発'), category: 'other' },
+  { name: bt('Team Development', 'チーム開発'), category: 'other' }
 ];
 
 // Multilingual experience data
 export const experience: LocalizedExperience[] = [
-
   {
     title: bt('Applied Research Engineer', 'Applied Research Engineer'),
     company: bt('Sakana AI', 'Sakana AI'),
@@ -252,38 +250,46 @@ export const experience: LocalizedExperience[] = [
   }
 ];
 
-
 export const education: LocalizedEducation[] = [
   {
-    degree: bt('PhD in Information Science and Technology, Mathematical Informatics', '東京大学 情報理工学系研究科 博士課程修了'),
+    degree: bt(
+      'PhD in Information Science and Technology, Mathematical Informatics',
+      '東京大学 情報理工学系研究科 博士課程修了'
+    ),
     institution: bt('The University of Tokyo', ' '),
     location: bt('Tokyo, Japan', '東京, 日本'),
     startDate: '10/2022',
-    endDate: '09/2025',
+    endDate: '09/2025'
     // description: ba(
     //   ['Focusing on algorithm design, applied mathematics, and mechanism design'],
     //   ['アルゴリズム、応用数学、最適化、メカニズムデザインなど']
     // )
   },
   {
-    degree: bt('Master of Information Science and Technology, Mathematical Informatics', '東京大学 情報理工学系研究科 修士課程修了'),
+    degree: bt(
+      'Master of Information Science and Technology, Mathematical Informatics',
+      '東京大学 情報理工学系研究科 修士課程修了'
+    ),
     institution: bt('The University of Tokyo', ' '),
     // field: bt('Mathematical Informatics', '数理情報学'),
     location: bt('Tokyo, Japan', '東京, 日本'),
     startDate: '04/2020',
-    endDate: '03/2022',
+    endDate: '03/2022'
     // description: ba(
     //   ['Mechanism Design, Machine Learning, Fair Division, Matching'],
     //   ['メカニズムデザイン、機械学習、公平分割、マッチング']
     // )
   },
   {
-    degree: bt('Bachelor of Engineering, Mathematical Engineering and Information Physics', '東京大学 工学部 計数工学科 卒業'),
+    degree: bt(
+      'Bachelor of Engineering, Mathematical Engineering and Information Physics',
+      '東京大学 工学部 計数工学科 卒業'
+    ),
     institution: bt('The University of Tokyo', ' '),
     // field: bt('Mathematical Engineering and Information Physics', '数理情報工学'),
     location: bt('Tokyo, Japan', '東京, 日本'),
     startDate: '04/2016',
-    endDate: '03/2020',
+    endDate: '03/2020'
     // description: ba(
     //   ['Applied Mathematics, Statistics'],
     //   ['応用数学、統計学']
@@ -294,18 +300,22 @@ export const education: LocalizedEducation[] = [
 // Multilingual publications data
 export const publications: LocalizedPublication[] = [
   {
-    title: btNoTranslate('Reaction yield oscillates over reaction time in first-order chemical reactions'),
+    title: btNoTranslate(
+      'Reaction yield oscillates over reaction time in first-order chemical reactions'
+    ),
     authors: 'Y. Harabuchi, T. Yokoyama, K. Katayama, S. Maeda, T. Oki, and S. Iwata',
     venue: btNoTranslate('RSC Advances, 2026'),
     category: 'journal',
-    url: 'https://pubs.rsc.org/ra/article/16/9/7681/909197/Reaction-yield-oscillates-over-reaction-time-in',
+    url: 'https://pubs.rsc.org/ra/article/16/9/7681/909197/Reaction-yield-oscillates-over-reaction-time-in'
   },
   {
-    title: btNoTranslate('Balancing fairness and high match rates in reciprocal recommender systems: A Nash social welfare approach'),
+    title: btNoTranslate(
+      'Balancing fairness and high match rates in reciprocal recommender systems: A Nash social welfare approach'
+    ),
     authors: 'Y. Tomita and T. Yokoyama',
     venue: btNoTranslate('ACM Transactions on Recommender Systems, 2026'),
     category: 'journal',
-    url: 'https://dl.acm.org/doi/10.1145/3793538',
+    url: 'https://dl.acm.org/doi/10.1145/3793538'
   },
   {
     title: btNoTranslate('Mechanism-informed learning for fair division'),
@@ -318,10 +328,7 @@ export const publications: LocalizedPublication[] = [
     title: btNoTranslate('Position fair mechanisms allocating indivisible goods'),
     authors: 'R. Mahara, R. Mizutani, T. Oki, and T. Yokoyama',
     venue: btNoTranslate('In Proceedings of AAAI 2026'),
-    description: ba(
-      ['* Oral presentation (top 5%)'],
-      ['* Oral発表（上位5%）']
-    ),
+    description: ba(['* Oral presentation (top 5%)'], ['* Oral発表（上位5%）']),
     category: 'conference',
     url: 'https://dl.acm.org/doi/10.1609/aaai.v40i20.38763'
   },
@@ -330,17 +337,19 @@ export const publications: LocalizedPublication[] = [
     authors: 'P. Manurangsi, W. Suksompong, and T. Yokoyama',
     venue: btNoTranslate('Theoretical Computer Science, 2025'),
     category: 'journal',
-    url: 'https://www.sciencedirect.com/science/article/pii/S0304397525004712',
+    url: 'https://www.sciencedirect.com/science/article/pii/S0304397525004712'
   },
   {
     title: btNoTranslate('Asymptotic analysis of weighted fair division'),
     authors: 'P. Manurangsi, W. Suksompong, and T. Yokoyama',
     venue: btNoTranslate('In Proceedings of IJCAI 2025'),
     category: 'conference',
-    url: 'https://www.ijcai.org/proceedings/2025/443',
+    url: 'https://www.ijcai.org/proceedings/2025/443'
   },
   {
-    title: btNoTranslate('Probabilistic analysis of stable matching in large markets with siblings'),
+    title: btNoTranslate(
+      'Probabilistic analysis of stable matching in large markets with siblings'
+    ),
     authors: 'Z. Sun, T. Yokoyama, and M. Yokoo',
     venue: btNoTranslate('In Proceedings of IJCAI 2025'),
     category: 'conference',
@@ -352,11 +361,14 @@ export const publications: LocalizedPublication[] = [
     authors: 'T. Yokoyama and A. Igarashi',
     venue: btNoTranslate('In Proceedings of AAMAS 2025'),
     category: 'conference',
-    url: 'https://dl.acm.org/doi/10.5555/3709347.3743864',
+    url: 'https://dl.acm.org/doi/10.5555/3709347.3743864'
   },
   {
-    title: btNoTranslate('Virtual ligand-assisted optimization: A rational strategy for ligand engineering'),
-    authors: 'W. Matsuoka, T. Oki, R. Yamada, T. Yokoyama, S. Suda, C. M. Saunders, B. B. Skjelstad, Y. Harabuchi, N. Fey, S. Iwata, and S. Maeda',
+    title: btNoTranslate(
+      'Virtual ligand-assisted optimization: A rational strategy for ligand engineering'
+    ),
+    authors:
+      'W. Matsuoka, T. Oki, R. Yamada, T. Yokoyama, S. Suda, C. M. Saunders, B. B. Skjelstad, Y. Harabuchi, N. Fey, S. Iwata, and S. Maeda',
     venue: btNoTranslate('ACS Catalysis, 2024'),
     category: 'journal',
     url: 'https://pubs.acs.org/doi/10.1021/acscatal.4c06003'
@@ -366,15 +378,17 @@ export const publications: LocalizedPublication[] = [
     authors: 'Y. Tomita and T. Yokoyama',
     venue: btNoTranslate('In Proceedings of RecSys 2024'),
     description: ba(
-      ['* Shortlisted for 6 best full paper candidates in RecSys\'24'],
-      ['* RecSys\'24において最優秀論文候補6件にノミネート']
+      ["* Shortlisted for 6 best full paper candidates in RecSys'24"],
+      ["* RecSys'24において最優秀論文候補6件にノミネート"]
     ),
     category: 'conference',
     url: 'https://dl.acm.org/doi/10.1145/3640457.3688130',
     repo: 'https://github.com/CyberAgentAILab/FairReciprocalRecommendation'
   },
   {
-    title: btNoTranslate('Differentiating the yield of chemical reactions using parameters in first-order kinetic equations to identify elementary steps that control the reactivity from complicated reaction path networks'),
+    title: btNoTranslate(
+      'Differentiating the yield of chemical reactions using parameters in first-order kinetic equations to identify elementary steps that control the reactivity from complicated reaction path networks'
+    ),
     authors: 'Y. Harabuchi, T. Yokoyama, W. Matsuoka, T. Oki, S. Iwata, and S. Maeda',
     venue: btNoTranslate('The Journal of Physical Chemistry A, 2024'),
     category: 'journal',
@@ -387,7 +401,7 @@ export const publications: LocalizedPublication[] = [
     category: 'conference',
     url: 'https://ojs.aaai.org/index.php/AAAI/article/view/27075',
     repo: 'https://github.com/kaji-buntan-project/kaji-buntan'
-  },
+  }
 ];
 
 // OSS projects data
@@ -395,7 +409,7 @@ export const projects: LocalizedProject[] = [
   {
     title: bt('Kajibuntan (Household Chore Division Application)', 'Kajibuntan（家事分担アプリ）'),
     description: bt(
-      'We developed a web application using fair division algorithms for household chore allocation. Developed as part of a Code for Japan project. Featured on NHK (Japan\'s national public broadcasting).',
+      "We developed a web application using fair division algorithms for household chore allocation. Developed as part of a Code for Japan project. Featured on NHK (Japan's national public broadcasting).",
       '家事分担のための公平分割アルゴリズムを使用したWebアプリケーション。Code for Japanのプロジェクトの一環として、NHKで特集されました。'
     ),
     image: '',
@@ -425,10 +439,7 @@ export const projects: LocalizedProject[] = [
 // Profile data
 export const profile: LocalizedProfile = {
   name: bt('Tomohiko Yokoyama', '横山 智彦'),
-  title: bt(
-    'Applied Research Engineer at Sakana AI',
-    'Sakana AI Applied Research Engineer'
-  ),
+  title: bt('Applied Research Engineer at Sakana AI', 'Sakana AI Applied Research Engineer'),
   image: '',
   bio: bt(
     `My interests have focused particularly on the intersection of machine learning and platforms, as well as how to leverage LLMs in agentic applications. 
