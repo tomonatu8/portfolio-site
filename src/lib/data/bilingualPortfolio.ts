@@ -62,7 +62,6 @@ export const skills: LocalizedSkill[] = [
     ),
     category: 'programming' 
   },
-
   
   // Frameworks & Libraries (no description needed)
   // { name: 'React', category: 'programming' },
@@ -125,8 +124,6 @@ export const experience: LocalizedExperience[] = [
     employmentType: bt('Part-time', 'パートタイム'),
     experienceType: 'research'
   },
-
-  // Liquitousも書いておく
 
   {
     title: bt('R&D Engineer', 'R&Dエンジニア'),
@@ -308,7 +305,7 @@ export const publications: LocalizedPublication[] = [
     venue: btNoTranslate('ACM Transactions on Recommender Systems, 2026'),
     category: 'journal',
   },
-   {
+  {
     title: btNoTranslate('Mechanism-informed learning for fair division'),
     authors: 'A. Igarashi, R. Maruo, K. Takeuchi, and T. Yokoyama',
     venue: btNoTranslate('In Proceedings of AAMAS 2026'),
@@ -438,7 +435,7 @@ export const profile: LocalizedProfile = {
     I received my PhD in Information Science and Technology from the University of Tokyo under the supervision of Prof. Satoru Iwata, specializing in optimization, mechanism design, algorithmic game theory, and machine learning.`,
     `AI技術やプラットフォーム、LLMのマルチエージェント的活用に興味があり、Sakana AIでApplied Research Engineerとして働いています。
     また、研究と社会実装の架け橋に興味や情熱を持っています。
-    2025年9月に東京大学情報理工で博士号を取得しました（指導教員：岩田覚教授）、専門は最適化、マルチエージェントシステム、アルゴリズム的ゲーム理論、機械学習分野です。`
+    2025年9月に東京大学情報理工で博士号を取得しました（指導教員：岩田覚教授）。専門は最適化、マルチエージェントシステム、アルゴリズム的ゲーム理論、機械学習分野です。`
   ),
   email: 'tomohiko.yokoyama.888@gmail.com',
   github: 'https://github.com/tomonatu8',
