@@ -84,7 +84,7 @@
 <Hero />
 <EngineerExperience />
 <ResearchExperience />
-<Research />
 <Projects />
 <Education />
+<Research />
 <!-- <Skills /> -->
