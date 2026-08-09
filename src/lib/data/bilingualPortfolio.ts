@@ -443,7 +443,7 @@ export const profile: LocalizedProfile = {
   image: '',
   bio: bt(
     `Currently an Applied Engineer at Sakana AI, where I build LLM agent systems with enterprise clients in the Japanese financial sector, taking projects from the initial proposal through PoC to enterprise solutions. I have delivered AI systems to Japanese enterprises and public-sector organizations, working with clients in Japanese and within engineering teams in Japanese / English. My background spans algorithm design, machine learning, and full-stack implementation. I hold a PhD in Information Science and Technology from the University of Tokyo.`,
-    `Sakana AIのApplied Research Engineerとして、クライアントとLLMエージェントシステムを構築しており、提案からPoC、本番導入まで携わっています。東京大学情報理工学系研究科で博士号を取得しました。専門はアルゴリズム的ゲーム理論、マルチエージェントシステムです。I技術やプラットフォーム、LLMのマルチエージェント的活用に興味があります。`
+    `Sakana AIのApplied Research Engineerとして、クライアントとLLMエージェントシステムを構築しており、提案からPoC、本番導入まで携わっています。東京大学情報理工学系研究科で博士号を取得しました。専門はアルゴリズム的ゲーム理論、マルチエージェントシステムです。AI技術やプラットフォーム、LLMのマルチエージェント的活用に興味があります。`
   ),
   email: 'tomohiko.yokoyama.888@gmail.com',
   github: 'https://github.com/tomonatu8',
