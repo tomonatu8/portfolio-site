@@ -442,13 +442,8 @@ export const profile: LocalizedProfile = {
   title: bt('Applied Research Engineer at Sakana AI', 'Sakana AI Applied Research Engineer'),
   image: '',
   bio: bt(
-    `My interests have focused particularly on the intersection of machine learning and platforms, as well as how to leverage LLMs in agentic applications. 
-    With practical experience in algorithm and AI implementation, I am passionate about bridging the gap between research and real-world applications. 
-    Currently working as an Applied Research Engineer at Sakana AI. 
-    I received my PhD in Information Science and Technology from the University of Tokyo under the supervision of Prof. Satoru Iwata, specializing in optimization, mechanism design, algorithmic game theory, and machine learning.`,
-    `AI技術やプラットフォーム、LLMのマルチエージェント的活用に興味があり、Sakana AIでApplied Research Engineerとして働いています。
-    また、研究と社会実装の架け橋に興味や情熱を持っています。
-    2025年9月に東京大学情報理工で博士号を取得しました（指導教員：岩田覚教授）。専門は最適化、マルチエージェントシステム、アルゴリズム的ゲーム理論、機械学習分野です。`
+    `Currently an Applied Engineer at Sakana AI, where I build LLM agent systems with enterprise clients in the Japanese financial sector, taking projects from the initial proposal through PoC to enterprise solutions. I have delivered AI systems to Japanese enterprises and public-sector organizations, working with clients in Japanese and within engineering teams in Japanese / English. My background spans algorithm design, machine learning, and full-stack implementation. I hold a PhD in Information Science and Technology from the University of Tokyo.`,
+    `Sakana AIのApplied Research Engineerとして、クライアントとLLMエージェントシステムを構築しており、提案からPoC、本番導入まで携わっています。東京大学情報理工学系研究科で博士号を取得しました。専門はアルゴリズム的ゲーム理論、マルチエージェントシステムです。I技術やプラットフォーム、LLMのマルチエージェント的活用に興味があります。`
   ),
   email: 'tomohiko.yokoyama.888@gmail.com',
   github: 'https://github.com/tomonatu8',
