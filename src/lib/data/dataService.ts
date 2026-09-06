@@ -131,6 +131,25 @@ export function getSkills(lang?: Language) {
   }
 }
 
+// Convert bilingual involvements data to language-specific data
+export function getInvolvements(lang?: Language) {
+  try {
+    const currentLang = lang || (isBrowser ? get(language) : 'en');
+
+    return bilingualData.involvements.map((item) => ({
+      role: getText(item.role, currentLang),
+      venues: item.venues.map((venue) => ({
+        name: getText(venue.name, currentLang),
+        url: venue.url
+      })),
+      category: item.category
+    }));
+  } catch (e) {
+    console.error('Error in getInvolvements:', e);
+    return [];
+  }
+}
+
 // Get profile data for the current language
 export function getProfile(lang?: Language) {
   try {

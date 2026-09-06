@@ -72,6 +72,10 @@ export const sectionTitles: Translations = {
   skills: {
     en: 'Skills',
     ja: 'スキル'
+  },
+  otherInvolvements: {
+    en: 'Other Involvements',
+    ja: 'その他の活動'
   }
 };
 
@@ -140,6 +144,14 @@ export const projects: Translations = {
   liveDemo: {
     en: 'Live Demo',
     ja: 'Live Demo'
+  }
+};
+
+// その他の活動
+export const involvements: Translations = {
+  reviewing: {
+    en: 'Reviewing',
+    ja: '査読'
   }
 };
 

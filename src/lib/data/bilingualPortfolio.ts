@@ -6,7 +6,8 @@ import type {
   LocalizedExperience,
   LocalizedSkill,
   LocalizedPublication,
-  LocalizedProject
+  LocalizedProject,
+  LocalizedInvolvement
 } from './localizedData';
 
 const bt = (en: string, ja: string): BilingualText => ({ en, ja });
@@ -433,6 +434,21 @@ export const projects: LocalizedProject[] = [
     //   ['Rust', 'Python', 'PyO3', 'GitHub Actions']
     // ),
     repo: 'https://github.com/tomonatu8/pymallows'
+  }
+];
+
+// Other involvements data
+export const involvements: LocalizedInvolvement[] = [
+  {
+    role: bt('Program Committee', 'プログラム委員'),
+    venues: [
+      { name: btNoTranslate('AAAI 2027'), url: 'https://aaai.org/conference/aaai/aaai-27/' },
+      {
+        name: btNoTranslate('AAAI 2026'),
+        url: 'https://aaai.org/conference/aaai/aaai-26/2026-program-committee/'
+      }
+    ],
+    category: 'reviewing'
   }
 ];
 
