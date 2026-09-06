@@ -66,3 +66,9 @@ export interface LocalizedProject {
   demo?: string;
   article?: string;
 }
+
+export interface LocalizedInvolvement {
+  role: BilingualText;
+  venues: { name: BilingualText; url?: string }[];
+  category: string; // 'reviewing' など
+}

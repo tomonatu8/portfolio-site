@@ -6,6 +6,7 @@
   import EngineerExperience from '$lib/components/EngineerExperience.svelte';
   import Projects from '$lib/components/Projects.svelte';
   import Skills from '$lib/components/Skills.svelte';
+  import OtherInvolvements from '$lib/components/OtherInvolvements.svelte';
   import { language } from '$lib/i18n/i18n';
 
   const SITE_URL = 'https://tomonatu8.github.io/portfolio-site';
@@ -87,4 +88,5 @@
 <Projects />
 <Education />
 <Research />
+<OtherInvolvements />
 <!-- <Skills /> -->
