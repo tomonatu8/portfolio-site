@@ -1,7 +1,6 @@
 <script lang="ts">
   import { language, t } from '$lib/i18n/i18n';
   import { publications as pubTranslations } from '$lib/i18n/translations';
-  import { fly } from 'svelte/transition';
 
   export let title: { en: string; ja: string };
   export let publications: any[];
@@ -10,8 +9,8 @@
 <div class="mb-8">
   <h3 class="mb-3 text-lg font-bold">{t(title, $language)}</h3>
   <div class="space-y-1">
-    {#each publications as pub, index}
-      <div class="" in:fly={{ y: 20, duration: 300, delay: index * 100 }}>
+    {#each publications as pub}
+      <div>
         <!-- タイトルとリンク -->
         <div class="mb-1 ml-4">
           <span style="display: inline;">
